@@ -113,7 +113,12 @@ section.section{
     font-size: 16px;color: white;font-weight: bold;text-align: center;
 }
 
-/* section visual */
+/* section visual common */
+.contentWrap>ul>li:nth-child(1){width: 75%;height: 450px;}
+.contentWrap>ul>li:nth-child(2){height: 450px;}
+.contentWrap>ul>li:nth-child(8){width: 75%;}
+
+/* section visual one*/
 .contentWrap>ul>li{float: left;width: 25%;height: 225px;}
 .contentWrap .bx-wrapper{
     -moz-box-shadow: 0 0 0 #fff;
@@ -131,10 +136,28 @@ section.section{
 
 .contentWrap>ul>.main_one{position: relative;}
 
-.contentWrap>ul>li>.text>h1,.botton{
-    position: absolute;top: 30px;left: 30px;
+.contentWrap>ul>li .card .text{
+    position: relative;
+    top: -450px;
 }
-.contentWrap>ul>li>.text>h1{font-size: 66px;}
+.contentWrap>ul>li .card h1{
+    font-size: 66px;
+    line-height: 77px;
+    letter-spacing: 0.03em;
+    position: absolute;
+    top: 80px;left: 80px;
+    color:#770F2E
+}
+.contentWrap>ul>li .card p{
+    font-size: 14px;
+    padding: 0 10px;color:white;font-weight: bold;
+}
+.contentWrap>ul>li .card .botton{
+    position: absolute;
+    top: 330px;left: 80px;
+    display: flex;justify-content: center;align-items: center;
+    width: 168px;height: 40px;background-color: #760023;
+}
 
 .contentWrap>ul>li>.preBtn,.nextBtn{
     width: 55px;height: 70px;
@@ -144,7 +167,23 @@ section.section{
 .contentWrap>ul>li>.preBtn{background-color: rgba(126,124,125,0.8)}
 .contentWrap>ul>li>.nextBtn{background-color: rgba(0,0,0,0.6);right: 0;}
 
-.contentWrap>ul>li:nth-child(1){width: 75%;height: 450px;}
-.contentWrap>ul>li:nth-child(2){height: 450px;}
-.contentWrap>ul>li:nth-child(8){width: 75%;}
 
+/* section visual two*/
+.contentWrap>ul>li.main_two{position: relative;}
+.contentWrap>ul>li.main_two .card_two{
+    position: absolute;
+    top: 70px;left: 30px;
+}
+.contentWrap>ul>li.main_two h3{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.contentWrap>ul>li.main_two .card_two>p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.contentWrap>ul>li.main_two .botton{}
+.contentWrap>ul>li.main_two .card_two .botton p{
+    font-size: 16px;
+    font-weight: bold;
+}
