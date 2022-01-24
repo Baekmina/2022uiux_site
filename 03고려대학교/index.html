@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고려대학교</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,37 +15,46 @@
 
     <script>
         $(document).ready(function(){
-            $(".").bxSlider();
-            $(".").bxSlider();
+            var slide = $(".slider").bxSlider({
+                mode:'horizontal',
+                auto:true,
+                controls:true
+            });
+
+         $(".nextBtn").click(function(){
+                slide.goToNextSlide();
+            })
+            $(".preBtn").click(function(){
+                slide.goToPrevSlide();
+            });
         });
     </script>
 
 </head>
 <body>
-    <!-- header  -->
-    <div class="header">
-        <div class="utilWrap">
-            <div class="utilMenu clearfix">
-                <div class="util_one">
-                    <ul class="clearfix">
+    <header>
+        <div class="navTopWrap">
+            <div class="navTop">
+                <div class="nav">
+                    <ul>
                         <li><a href="#" class="active">대학교</a></li>
                         <li><a href="#">입학안내</a></li>
                         <li><a href="#">대학원</a></li>
                     </ul>
                 </div>
-                <div class="util_two">
-                    <ul class="clearfix">
+                <div class="utilMenu">
+                    <ul>
                         <li><a href="#">글자크기</a></li>
                         <li>
                             <a href="#">
-                                <div class="util_box01">
-                                    <div class="minus"></div>
-                                </div>
-                                <div class="util_box02">
-                                    <div class="plus01"></div>
-                                    <div class="plus02"></div>
-                                </div>
-                            </a>
+                            <div class="util_box01">
+                                <div class="minus"></div>
+                            </div>
+                            <div class="util_box02">
+                                <div class="plus01"></div>
+                                <div class="plus02"></div>
+                            </div>
+                        </a>
                         </li>
                         <li><a href="#">찾아오시는길</a></li>
                         <li><a href="#">ENGLISH</a></li>
@@ -54,8 +63,8 @@
                 </div>
             </div>
         </div>
-        <div class="logoWrap">
-            <div class="logo_h1">
+        <div class="navBottomWrap">
+            <div class="logo">
                 <img src="images/logo_h1.svg" alt="">
             </div>
             <div class="logoMenuWrap">
@@ -78,9 +87,74 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- header end  -->
+    </header>
 
-
+    <section class="section sectionWrap">
+        <div class="container titleWrap">
+            <div class="title">
+                <h3>함께 나누며 세상을 이끌어</h3>
+                <h2>세계로향하는 고려대학교</h2>
+            </div>
+            <div class="secBannerWrap">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon01_01.png" alt="">
+                        </a>
+                        <h4>입학절차안내</h4>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon01_02.png" alt="">
+                        </a>
+                        <h4>입학설명회</h4>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon01_03.png" alt="">
+                        </a>
+                        <h4>장학제도</h4>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon01_04.png" alt="">
+                        </a>
+                        <h4>증명서발급</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container contentWrap">
+            <ul class="clearfix">
+                <li class="main_one">
+                    <ul class="slider">
+                        <li>
+                            <img src="images/배경02.png" alt="">
+                        </li>
+                        <li><img src="images/배경02.png" alt=""></li>
+                        <li><img src="images/배경02.png" alt=""></li>
+                        <li><img src="images/배경02.png" alt=""></li>
+                    </ul>
+                    <div class="text">
+                        <h1>고려에서<br>시작하는<br>새로운 꿈</h1>
+                        <div class="botton">
+                            자세히 보기
+                        </div>
+                    </div>
+                    <div class="preBtn"><img src="images/pre_bt.png" alt=""></div>
+                    <div class="nextBtn"><img src="images/next_bt.png" alt=""></div>
+                </li>
+                <li>
+                    <img src="images/배경03.png" alt="">
+                </li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
