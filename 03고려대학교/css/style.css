@@ -172,18 +172,100 @@ section.section{
 .contentWrap>ul>li.main_two{position: relative;}
 .contentWrap>ul>li.main_two .card_two{
     position: absolute;
-    top: 70px;left: 30px;
+    top: 50px;left: 30px;
 }
 .contentWrap>ul>li.main_two h3{
     font-size: 40px;
     margin-bottom: 16px;
+    color:white;
 }
 .contentWrap>ul>li.main_two .card_two>p{
     font-size: 20px;
     margin-bottom: 30px;
+    color: white;
 }
-.contentWrap>ul>li.main_two .botton{}
 .contentWrap>ul>li.main_two .card_two .botton p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+    color:#ffffff;
+    float: left;
+}
+.contentWrap>ul>li.main_two .card_two .botton img{
+    padding: 0 5px;
+}
+
+.contentWrap>ul>li.main_two .card_two .botton{
+    width: 170px;height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentWrap>ul>li.main_three{
+    background-color: #66001E;
+}
+.contentWrap>ul>li.main_three .card_one h4{
+    font-size: 23px;color:white;
+    padding: 25px 0 0 20px;
+    margin-bottom: 20px;
+}
+.contentWrap>ul>li.main_three .card_two .subTit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentWrap>ul>li.main_three .card_two .subTit li{float: left;}
+.contentWrap>ul>li.main_three .card_two .subTit p{
+    font-size: 13px;text-align: center;
+    color: white;font-weight: bold;
+}
+
+.contentWrap>ul>li.main_four{
+    background-image: url(../images/배경04.png);
+}
+.contentWrap>ul>li.main_four .card_one h4{
+    font-size: 23px;color:white;
+    padding: 25px 0 0 20px;
+    margin-bottom: 20px;
+}
+.contentWrap>ul>li.main_four .wall{
+    width: 260px;height: 2px;color: white;
+}
+.contentWrap>ul>li.main_four .card_two ul{
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.contentWrap>ul>li.main_four .card_two ul li{
+    float: left;
+    font-size: 13px;color: white;font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contentWrap>ul>li.main_five{background: white;}
+.contentWrap>ul>li.main_five .card_one h4{
+    font-size: 23px;color:black;
+    padding: 25px 0 0 20px;
+    margin-bottom: 20px;
+}
+.contentWrap>ul>li.main_five .card_two{
+    display: flex;justify-content: center;align-items: center;
+    margin-bottom: 20px;
+}
+.contentWrap>ul>li.main_five .card_two img{float: left;}
+.contentWrap>ul>li.main_five .card_two p{
+    float: left;
+    color: #5D5D5D;
+    font-size: 13px;line-height: 20px;padding-left: 16px;
+}
+.contentWrap>ul>li.main_five .card_three ul{float: right;margin-right: 15px;}
+.contentWrap>ul>li.main_five .card_three ul li{float: left;margin-right: 3px;}
+
+.contentWrap>ul>li.main_six{position: relative;}
+.contentWrap>ul>li.main_six .txt{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;line-height:50px;color:white;font-weight: bold;
+    width: 300px;height: 50px;
+    position: absolute;
+    bottom: 0;
 }
