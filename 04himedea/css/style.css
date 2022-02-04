@@ -54,7 +54,7 @@
 
         .visual{
             background-color: #213C6B;
-            background-image: url(images/main_bg01.jpg);
+            background-image: url(../images/main_bg01.jpg);
             background-repeat: no-repeat;
             background-position: center;
             height: 400px;
@@ -164,6 +164,17 @@
         .footerWrap .top{float: right;}
 
         .footerWrap .footerBottom{width: 980px;margin: 0 auto;padding: 20px 0;}
-        .footerWrap .footerBottom h3{float: left;width: 120px;}
+        .footerWrap .footerBottom h3{
+            float: left;width: 120px;font-size: 22px;color:#ffffff;
+            padding: 38px 0;
+        }
         .footerWrap .footerBottom .fbRight{float: left;}
-        .footerWrap address{font-style: normal;color: #a2a2a2;font-style: 12px;}
+        .footerWrap .footerBottom .fbRight p{
+            font-size: 13px;color:#A6A6A6;font-weight: bold;
+            padding: 10px 50px;
+        }
+        .footerWrap address{
+            font-style: normal;color: #A6A6A6;font-size: 12px;font-weight: bold;
+            padding: 0px 50px;
+            line-height: 20px;
+        }
