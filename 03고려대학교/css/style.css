@@ -336,6 +336,26 @@ section.section{
     color:white;padding: 0 10px;
 }
 
+/* content_slide */
+.slideWrap{background: #fff;}
+.slideWrap .content_left{
+    width: 300px;height: 60px;padding: 16px 32px;
+    border: 2px solid #6B6B6B;
+    border-top: none;border-left: none;border-bottom: none;
+}
+.slideWrap .content_left h4{
+    font-size: 20px;color:#770F2E;
+    float: left;
+    margin-right: 32px;
+}
+.slideWrap .content_left ul{float: left;}
+.slideWrap .content_left ul li{
+    float: left;
+    font-size: 20px;
+    color:#302f2f;
+}
+.slideWrap .content_left ul li img{padding: 0 7px;}
+
 /* footer  */
 .footerWrap{height: 182px;}
 .footerWrap .footerTopWrap{width: 1200px;height: 154px;margin: 0 auto;}
