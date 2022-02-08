@@ -23,19 +23,30 @@
                 controls:true
             });
 
-         $(".nextBtn").click(function(){
+            $(".nextBtn").click(function(){
                 slide.goToNextSlide();
             })
             $(".preBtn").click(function(){
                 slide.goToPrevSlide();
             });
 
-            $(".slide").bxSlider();
+            var slide2 = $(".slide").bxSlider();
+
             $(".youtube").colorbox({
                 iframe:true,
                 innerWidth:1000,
                 innerHeight:500,
-            })
+            });
+
+            var myslide = $(".slide3").bxSlider({
+                mode:'vertical'
+            });
+            $(".topBtn").click(function(){
+                myslide.goToNextSlide();
+            });  
+            $(".bottomBtn").click(function(){
+                myslide.goToNextSlide();
+            });
         });
     </script>
 
@@ -347,12 +358,22 @@
                 </div>
                 <div class="ct_two">
                     <ul>
-                        <li>
-                            <ul>
-                                <li>
-                                    
+                        <li class="main_nine">
+                            <ul class="slide3">
+                                <li class="up_down">
+                                    <h5>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이 ...</h5>
+                                </li>
+                                <li class="up_down">
+                                    <h5>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이 ...</h5>
+                                </li>
+                                <li class="up_down">
+                                    <h5>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이 ...</h5>
                                 </li>
                             </ul>
+                            <div class="Btn">
+                                <div class="topBtn"><img src="images/top_btn.png" alt=""></div>
+                                <div class="bottomBtn"><img src="images/bottom_btn.png" alt=""></div>
+                            </div>
                         </li>
                     </ul>
                 </div>
