@@ -96,7 +96,7 @@ section.section{
     background-size: auto,cover;
     padding: 60px 0;
 }
-.container{width: 1200px;margin: 0 auto;margin-bottom: 60px;}
+.container{width: 1200px;margin: 0 auto;margin-bottom: 40px;}
 .titleWrap{
     display: flex;justify-content: space-between;height: 140px;
 }
@@ -335,6 +335,9 @@ section.section{
 .contentWrap>ul>li.main_eight li.card_box .txt .btn p{
     color:white;padding: 0 10px;
 }
+
+
+
 
 /* content_slide */
 .slideWrap{background: #fff;height: 60px;}
