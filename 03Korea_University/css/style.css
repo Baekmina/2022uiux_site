@@ -243,20 +243,23 @@ section.section{
     width: 260px;
     margin-left: 25px;
 }
-.contentWrap>ul>li.main_four .card_two ul{
-    display: flex;
-    justify-content: space-between;
+.contentWrap>ul>li.main_four .card_two ul{float: left;
 }
 .contentWrap>ul>li.main_four .card_two ul li{
     float: left;
     font-size: 13px;color: white;font-weight: bold;
     margin-bottom: 15px;
-    list-style:inside;
-    letter-spacing: -0.02em;
+    /* list-style:inside; */
 }
-.contentWrap>ul>li.main_four .card_two ul p{
-    font-size: 13px;color: white;font-weight: bold;margin-left: 5px;
+.contentWrap>ul>li.main_four .card_two ul a{
+    font-size: 13px;color: white;font-weight: bold;
 }
+.contentWrap>ul>li.main_four .card_two ul p{position: relative;}
+.contentWrap>ul>li.main_four .card_two ul li span{
+    position: absolute;right: -80px;
+}
+
+
 
 .contentWrap>ul>li.main_five{background: white;}
 .contentWrap>ul>li.main_five .card_one h4{
