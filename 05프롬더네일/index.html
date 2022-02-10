@@ -20,7 +20,17 @@
 
     <script>
         $(document).ready(function(){
-            $(".slider").bxSlider();
+            var slide = $(".slider").bxSlider({
+                mode:'horizontal',
+                auto:true,
+            });
+
+            $(".nextBtn").click(function(){
+                slide.goToNextSlide();
+            });
+            $(".prevBtn").click(function(){
+                slide.goToPrevSlide();
+            });
         });
     </script>
 
@@ -49,11 +59,11 @@
         </div>
     </header>
 
-    <div class="container visualWrap">
+    <div class="container visualWrap clearfix">
         <ul class="clearfix">
             <li class="visual">
                 <ul class="slider">
-                    <li class="visual_card"><img src="images/main.png" alt=""></li>
+                    <li class="visual_card"><img src="images/main01.jpg" alt=""></li>
                     <li class="visual_card"><img src="images/main2.jpg" alt=""></li>
                     <li class="visual_card"><img src="images/main3.jpg" alt=""></li>
                     <li class="visual_card"><img src="images/main4.jpg" alt=""></li>
@@ -61,6 +71,8 @@
                     <li class="visual_card"><img src="images/main6.jpg" alt=""></li>
                     <li class="visual_card"><img src="images/maing7.jpg" alt=""></li>
                 </ul>
+                <div class="nextBtn"><img src="images/next.gif" alt=""></div>
+                <div class="prevBtn"><img src="images/prev.gif" alt=""></div>
             </li>
         </ul>
     </div>
@@ -75,6 +87,7 @@
                 <div class="card_two">
                     <div class="box"></div>
                     <img src="images/content1.PNG" alt="">
+                    <!-- <img src="images/content1_01.PNG" alt="" class="hover-img"> -->
                 </div>
             </div>
             <div class="content_two clearfix">
