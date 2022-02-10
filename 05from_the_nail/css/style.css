@@ -233,4 +233,21 @@ footer{background: #DDDDDD;}
 }
 
 
-.footerWrap .footerUtil {}
+.footerWrap .footerMain{padding: 40px 0;}
+.footerWrap .footerMain ul{
+    display: flex;justify-content:space-around;
+}
+.footerWrap .footerMain ul li{float: left;}
+.footerWrap .footerMain ul li.ft_box p{
+    font-size: 14px;text-align: center;font-weight: bold;line-height: 24px;
+    color:#555555;margin-bottom: 10px;
+}
+.footerWrap .footerMain ul li.ft_box p.ptxt{font-size: 12px;color: #999999;line-height: 22px;}
+.footerWrap .footerMain ul li.ft_box address{
+    color:#555555;margin-top: 50px;font-size: 14px;
+}
+.footerWrap .footerMain ul li.ft_box2 p{
+    font-size: 12px;color: #999999;line-height: 30px;
+    text-align: center;font-weight: bold;
+}
+.footerWrap .footerMain ul li.ft.box3 img{}
