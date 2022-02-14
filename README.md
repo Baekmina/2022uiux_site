@@ -4,3 +4,4 @@
 3. college http://baekmina.github.io/2022uiux_site/03KoreaUniversity
 4. himedia http://baekmina.github.io/2022uiux_site/04himedia
 5. nail http://baekmina.github.io/2022uiux_site/05from_the_nail
+6. jejuair http://baekmina.github.io/2022uiux_site/06jejuair
