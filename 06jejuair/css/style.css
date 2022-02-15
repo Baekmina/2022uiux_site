@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+body{}
+
+/* header  */
+header{background: #EAD83E;height: 154px;}
+.top{width: 980px;margin: 0 auto;display: flex;align-items: center;justify-content: center;}
+.top .searchWrap{position: relative;margin-left: 45px;}
+.top .searchWrap label{
+    display: block;width: 60px;height: 20px;
+    background-image: url(../images/searchtext.jpg);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    align-items: center;
+    left: 13px;top: 5px;
+}
+.top .searchWrap .inp-search{
+    width: 290px;height: 30px;
+    border-radius: 20px;
+    text-indent: 82px;
+    border: 0 none;
+    font-size: 13px;
+}
+.top .btn-search{
+    width: 18px;height: 18px;
+    position: absolute;align-self: center;right: 10px;top: 5px;
+    border: 0 none;
+    background-image: url(../images/main_mglass01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.top h2{color:white;margin-left: 45px;font-size: 25px;}
+.top ul {margin-left: 45px;}
+.top ul li{float: left;padding: 32px 5px;}
+.top ul li:last-child{padding-right: 0;}
+
+
+/* banner  */
+.bannerWrap{background:#FAFAFA;}
+.bannerWrap .banner{width: 980px;margin: 0 auto;}
+.bannerWrap ul{}
+.bannerWrap ul li{
+    float: left;width: 16.666%;
+    border-left: 1px solid #c4c4c4;
+}
+.bannerWrap ul li:last-child{border-right: 1px solid #c4c4c4;}
+.bannerWrap ul li a{
+    display: block;text-align: center;
+    font-size: 18px;font-weight: bold;
+    padding: 16px 0;
+}
+
+/* header end  */
