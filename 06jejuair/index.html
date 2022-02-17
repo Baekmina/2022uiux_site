@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Jejuair</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
@@ -21,7 +22,16 @@
                 touchEnabled:false,
                 
             });
-            $
+            var myslide = $(".slider").bxSlider({
+                mode:'horizontal',
+                pager:false,
+            });
+            $(".prevBtn").click(function(){
+                myslide.goToPrevSlide();
+            });
+            $(".nextBtn").click(function(){
+                myslide.goToNextSlide();
+            });
         });
     </script>
 </head>
@@ -57,6 +67,11 @@
         </div>
     </header>
     <div class="contentsWrap">
+        <img src="images/bg_balloon02.png" alt="" class="img01">
+        <img src="images/bg_balloon03.png" alt="" class="img02">
+        <img src="images/Air.png" alt="" class="img03">
+        <img src="images/balloonHouse01.png" alt="" class="img04">
+        <img src="images/balloonHouse02.png" alt="" class="img05">
         <div class="content_one clearfix">
             <div class="left">
                 <div class="formWrap">
@@ -258,10 +273,10 @@
                     </div>
                     <div class="sliderPager">
                         <div class="menuPager">
-                            <a href="#" data-slide-index="0">공항예약</a>
-                            <a href="#" data-slide-index="1">호텔예약</a>
-                            <a href="#" data-slide-index="2">렌트카</a>
-                            <a href="#" data-slide-index="3">휴양지</a>
+                            <a href="#" data-slide-index="0"><i class="fas fa-plane"></i>공항예약</a>
+                            <a href="#" data-slide-index="1"><i class="fas fa-hotel"></i>호텔예약</a>
+                            <a href="#" data-slide-index="2"><i class="fas fa-car"></i>렌트카</a>
+                            <a href="#" data-slide-index="3"><i class="fas fa-suitcase-rolling"></i>휴양지</a>
                         </div>
                     </div>
                 </div>
@@ -294,23 +309,171 @@
             </div>
         </div>
 
-        <div class="content_two">
-            <ul>
-                <li>
+        <div class="content_two clearfix">
+            <ul class="ctwoWrap">
+                <li class="ctwo">
                     <ul class="slider">
-                        <li><img src="images/content02_01.png" alt=""></li>
-                        <li><img src="images/content02_01.png" alt=""></li>
-                        <li><img src="images/content02_01.png" alt=""></li>
+                        <li class="box">
+                            <img src="images/content02_01.png" alt="">
+                            <div class="card_txt">
+                                <p>HILLTON HOTEL (PARIS)</p>
+                                <div class="scoreWrap">
+                                    <ul class="score">
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <img src="images/content02_01.png" alt="">
+                            <div class="card_txt">
+                                <p>HILLTON HOTEL (PARIS)</p>
+                                <div class="scoreWrap">
+                                    <ul class="score">
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <img src="images/content02_01.png" alt="">
+                            <div class="card_txt">
+                                <p>HILLTON HOTEL (PARIS)</p>
+                                <div class="scoreWrap">
+                                    <ul class="score">
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
+                    <div class="prevBtn">
+                        <img src="images/prev_btn.png" alt="">
+                    </div>
+                    <div class="nextBtn">
+                        <img src="images/next_btn.png" alt="">
+                    </div>
+                </li>
+                <li class="ctwo">
                     <ul class="slider">
-                        <li><img src="images/content02_02.png" alt=""></li>
-                        <li><img src="images/content02_02.png" alt=""></li>
-                        <li><img src="images/content02_02.png" alt=""></li>
+                        <li class="box">
+                            <img src="images/content02_02.png" alt="">
+                            <div class="card_text">
+                                <p>관광명소(디즈니랜드)</p>
+                                <div class="scoreWrap">
+                                    <ul class="score">
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <img src="images/content02_02.png" alt="">
+                            <div class="card_text">
+                                <p>관광명소(디즈니랜드)</p>
+                                <div class="scoreWrap">
+                                    <ul class="score">
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <img src="images/content02_02.png" alt="">
+                            <div class="card_text">
+                                <p>관광명소(디즈니랜드)</p>
+                                <div class="scoreWrap">
+                                    <ul class="score">
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_yellow.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                        <li><img src="images/star_white.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
+                    <div class="prevBtn">
+                        <img src="images/prev_btn.png" alt="">
+                    </div>
+                    <div class="nextBtn">
+                        <img src="images/next_btn.png" alt="">
+                    </div>
+                </li>
+                <li class="ctwo">
+                    <img src="images/content02_03.png" alt="">
+                    <h4>TOKYO</h4>
+                    <div class="card_box">
+                        <h4>구름많음 20℃</h4>
+                        <P>습도 60% 바람 남남동 2m/s</P>
+                    </div>
+                </li>
+                <li class="ctwo">
+                    <img src="images/content02_04.png" alt="">
+                    <div class="text_titleWrap">
+                        <h5>
+                            "해외여행은 처음이었는데<br>
+                            제주항공여행 덕분에 무사히<br>
+                            다녀올 수 있었어요."
+                        </h5>
+                        <p>프랑스 파리 자유여행</p>
+                        <ul class="score">
+                            <li><img src="images/star_yellow.png" alt=""></li>
+                            <li><img src="images/star_yellow.png" alt=""></li>
+                            <li><img src="images/star_yellow.png" alt=""></li>
+                            <li><img src="images/star_yellow.png" alt=""></li>
+                            <li><img src="images/star_yellow.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="cardBox">
+                        <h4>facebook 여행후기</h4>
+                        <P>(임정희님)</P>
+                    </div>
+                    <div class="view">후기<br>보러가기</div>
                 </li>
             </ul>
         </div>
-        <div class="content_three"></div>
+        <div class="content_three">
+            <ul class="cthreeWrap">
+                <li class="ani">
+                    <img src="images/content03_01.png" alt="">
+                    <div class="bg_one"></div>
+                    <div class="bg_card">
+                        <h4><i class="fas fa-globe-asia"></i>여행정보</h4>
+                        <p>다양한 나라의 명소와 맛집 등<br>
+                            상세한 정보를 볼 수 있습니다.</p>
+                    </div>
+                    <div class="barWrap">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                    </div>
+                </li>
+                <li><img src="images/content03_02.png" alt=""></li>
+                <li><img src="images/content03_03.png" alt=""></li>
+                <li><img src="images/content03_04.png" alt=""></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
