@@ -453,3 +453,56 @@ legend{position: absolute;left: 0;text-indent: -9999px;}
     font-size: 12px;font-weight: bold;color:#7A7A7A;
     line-height: 20px;
 }
+
+
+
+
+/* company  */
+section.visual.company{
+    height: 290px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;align-items: center;justify-content: center;
+}
+section.visual.company .maintitle{
+    width: 341px;height: 147px;
+    transform: translateY(-20px);
+}
+section.visual.company h3{font-size: 60px;color:white;text-align: center;}
+section.visual.company h3:after{
+    content:"";display: block;
+    width: 335px;height: 6px;background: white;
+    margin-bottom: 10px;
+}
+section.visual.company p{
+    font-size: 18px;color:white;text-align: center;
+    font-weight: bold;
+}
+
+
+/* company content  */
+
+body.sub{background: #FFFDEF;}
+
+section.content.company{
+    width: 980px;margin: 0 auto;margin-top: -73px;
+    background: white;
+    border-top: 5px solid #EAD83E;
+    border-bottom: 5px solid #EAD83E;
+    padding: 50px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: relative;
+    margin-bottom: 20px;
+}
+section.content.company img{display: block;margin: 0 auto;}
+
+section.content.company .subtitle{
+    width: 869px;margin: 0 auto;
+    position: absolute;
+    right: -658px;
+}
+section.content.company .subtitle .locat{
+    font-size: 13px;font-weight: bold;
+    color:#898989;
+}
