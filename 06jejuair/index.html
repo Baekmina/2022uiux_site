@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Jejuair</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -25,6 +26,7 @@
             var myslide = $(".slider").bxSlider({
                 mode:'horizontal',
                 pager:false,
+                auto:true,
             });
             $(".prevBtn").click(function(){
                 myslide.goToPrevSlide();
@@ -428,6 +430,7 @@
                         <h4>구름많음 20℃</h4>
                         <P>습도 60% 바람 남남동 2m/s</P>
                     </div>
+                    <div class="view">다른 나라 <br>날씨도 보러가기</div>
                 </li>
                 <li class="ctwo">
                     <img src="images/content02_04.png" alt="">
@@ -454,7 +457,7 @@
                 </li>
             </ul>
         </div>
-        <div class="content_three">
+        <div class="content_three clearfix">
             <ul class="cthreeWrap">
                 <li class="ani">
                     <img src="images/content03_01.png" alt="">
@@ -469,11 +472,65 @@
                         <div class="bar2"></div>
                     </div>
                 </li>
-                <li><img src="images/content03_02.png" alt=""></li>
-                <li><img src="images/content03_03.png" alt=""></li>
-                <li><img src="images/content03_04.png" alt=""></li>
+                <li class="ani">
+                    <img src="images/content03_02.png" alt="">
+                    <div class="bg_two"></div>
+                    <div class="bg_card_two">
+                        <h4><i class="fas fa-utensils"></i>맛집정보</h4>
+                        <p>다양한 나라의 명소와 맛집 등<br>
+                            상세한 정보를 볼 수 있습니다.</p>
+                    </div>
+                    <div class="barWrap">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                    </div>
+                </li>
+                <li class="ani">
+                    <img src="images/content03_03.png" alt="">
+                    <div class="bg_two"></div>
+                    <div class="bg_card_two">
+                        <h4><i class="fas fa-home"></i>숙박정보</h4>
+                        <p>다양한 나라의 명소와 맛집 등<br>
+                            상세한 정보를 볼 수 있습니다.</p>
+                    </div>
+                    <div class="barWrap">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                    </div>
+                </li>
+                <li class="ani">
+                    <img src="images/content03_04.png" alt="">
+                    <div class="bg_three"></div>
+                    <div class="bg_card">
+                        <h4><i class="far fa-thumbs-up"></i>여행자 후기</h4>
+                        <p>다양한 나라의 명소와 맛집 등<br>
+                            상세한 정보를 볼 수 있습니다.</p>
+                    </div>
+                    <div class="barWrap">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                    </div>
+                </li>
             </ul>
         </div>
+        <footer>
+            <div class="footerWrap">
+                <div class="footerTop">
+                    <ul class="clearfix">
+                        <li><a href="#">여객운송약관</a></li>
+                        <li><a href="#">투자정보</a></li>
+                        <li><a href="#">채용안내</a></li>
+                        <li><a href="#">홈페이지 이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="footerBottom">
+                    <p>사업자등록번호 : 616-81-50527 대표이사 : 김이배 제주특별자치도 제주시 신대로 64(연동, 건설공제회관 3층)
+                    <br>Copyright ⓒ JEJUAIR. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
