@@ -458,24 +458,35 @@ legend{position: absolute;left: 0;text-indent: -9999px;}
 
 
 /* company  */
-section.visual.company{
+section.visual.company,
+section.visual.reservation{
     height: 290px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;align-items: center;justify-content: center;
 }
-section.visual.company .maintitle{
+section.visual.company .maintitle,
+section.visual.reservation .maintitle{
     width: 341px;height: 147px;
     transform: translateY(-20px);
 }
-section.visual.company h3{font-size: 60px;color:white;text-align: center;}
+section.visual.company h3,
+section.visual.reservation h3{
+    font-size: 60px;color:white;text-align: center;
+}
 section.visual.company h3:after{
     content:"";display: block;
     width: 335px;height: 6px;background: white;
     margin-bottom: 10px;
 }
-section.visual.company p{
+section.visual.reservation h3:after{
+    content:"";display: block;
+    width: 400px;height: 6px;background: white;
+    margin-bottom: 10px;
+}
+section.visual.company p,
+section.visual.reservation p{
     font-size: 16px;color:white;text-align: center;
     font-weight: bold;
 }
