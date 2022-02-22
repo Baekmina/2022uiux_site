@@ -441,17 +441,17 @@ legend{position: absolute;left: 0;text-indent: -9999px;}
 
 
 /* footer */
-.footerWrap{width: 980px;margin: 0 auto;}
+.footerWrap{width: 980px;margin: 0 auto;padding: 20px 0;}
 .footerWrap .footerTop ul li{float: left;}
 .footerWrap .footerTop ul li a{
     display: block;text-align: center;
     font-size: 14px;color:#4B4A4A;font-weight: bold;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 .footerWrap .footerTop ul li a:first-child{padding-left: 0;}
 .footerWrap .footerBottom p{
     font-size: 12px;font-weight: bold;color:#7A7A7A;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 
