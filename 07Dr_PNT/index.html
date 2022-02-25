@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var slide = $(".slide_one").bxSlider();
+
+            $(".prevBtn").click(function(){
+                slide.goToPrevSlide();
+            });
+            $(".nextBtn").click(function(){
+                slide.goToNextSlide();
+            });
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1><a href="https://www.pntmall.com/"><img src="images/logo.png" alt=""></a></h1>
+            <ul class="nav">
+                <li><a href="#">제품</a></li>
+                <li><a href="#">닥터팩</a></li>
+                <li><a href="#">Dr.PNT 스토리</a></li>
+                <li><a href="#">마이헬스체크</a></li>
+            </ul>
+            <div class="utilWrap">
+                <ul class="util">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">이용후기</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <div class="search">
+                    <fieldset>
+                        <legend>제품 검색</legend>
+                        <input type="text" name="ser" id="ser" title="검색어" placeholder="Search">
+                        <a href="#"><img src="images/ic_search.png" alt=""></a>
+                    </fieldset>
+                </div>
+                <div class="mypage"><img src="images/ic_mypage.png" alt=""></div>
+            </div>
+        </div>
+    </header>
+    <div class="visual">
+        <ul>
+            <li>
+                <ul class="slide_one">
+                    <li><a href="#"><img src="images/slide01_01.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/slide01_02.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/slide01_03.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/slide01_04.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/slide01_05.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/slide01_06.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/slide01_07.jpg" alt=""></a></li>
+                </ul>
+                <div class="prevBtn">
+                    <img src="images/ic_prev7.png" alt="">
+                </div>
+                <div class="nextBtn">
+                    <img src="images/ic_next7.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
