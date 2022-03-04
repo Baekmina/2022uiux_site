@@ -8,15 +8,15 @@
 }
 /* 뷰포트(화면상에서의 뷰포트를 사용함) */
 .header .layer{
-    width: 100vw;height: 100vh;
+    width: 100vw;height: 180vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 1000px;
+    background-size: 100% 1704px;
     position: absolute;transition: 0.3s;
     /* transform-origin: center; 새로고침했을 때 가운데에서 조정하는 것*/
 }
-.header .layer.pic0{
-    background-image: url(../images/parallax0.png);
+.header .layer.p0{
+    background-image: url(../image/p0.webp);
 }
 .header .layer.pic1{
     background-image: url(../images/parallax1.png);
