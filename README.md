@@ -5,3 +5,5 @@
 4. himedia http://baekmina.github.io/2022uiux_site/04himedia
 5. nail http://baekmina.github.io/2022uiux_site/05from_the_nail
 6. jejuair http://baekmina.github.io/2022uiux_site/06jejuair
+7. dr.pnt http://baekmina.github.io/2022uiux_site/07Dr_pnt
+8. parallax http://baekmina.github.io/2022uiux_site/08parallax
