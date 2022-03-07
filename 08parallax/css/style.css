@@ -3,53 +3,91 @@
 /* header */
 /* body{height: 400vh;} 화면에 스크롤이 생기려면 body에 높이값을 주어야함. */
 .header{
-    width: 100vw;height: 100vh;background: #feae1b;overflow: hidden;
+    width: 100vw;height: 100vh;background: #002A6F;overflow: hidden;
     position: relative;
 }
-/* 뷰포트(화면상에서의 뷰포트를 사용함) */
 .header .layer{
-    width: 100vw;height: 180vh;
+    width: 100vw;height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 1704px;
+    background-size: auto 1000px;
     position: absolute;transition: 0.3s;
-    /* transform-origin: center; 새로고침했을 때 가운데에서 조정하는 것*/
 }
-.header .layer.p0{
-    background-image: url(../image/p0.webp);
+.header .layer.pic0{
+    background-image: url(../images/p0.png);
+    background-size: auto 850px;
+    background-position: 50% 100px;
 }
 .header .layer.pic1{
-    background-image: url(../images/parallax1.png);
-    /* transform: translateY(0); 양수는 밑으로 떨어지고 음수는 위로 올라감 */
+    background-image: url(../images/sky01.png);
+    background-size: cover;
 }
 .header .layer.pic2{
-    background-image: url(../images/parallax2.png);
+    background-image: url(../images/fire01.png);
 }
 .header .layer.pic3{
-    background-image: url(../images/parallax3.png);
+    background-image: url(../images/logo-d.png);
+    background-size: auto;
+    background-position: 50% 140px;
 }
 .header .layer.pic4{
-    background-image: url(../images/parallax4.png);
+    background-image: url(../images/cha01.png);
+    background-size: auto 300px;
+    background-position: 250px 650px;
 }
 .header .layer.pic5{
-    background-image: url(../images/parallax5.png);
+    background-image: url(../images/cha02.png);
+    background-size: auto 200px;
+    background-position: 180px 550px;
 }
 .header .layer.pic6{
-    background-image: url(../images/parallax6.png);
+    background-image: url(../images/cha03.png);
+    background-size: auto 150px;
+    background-position: 1500px 780px;
 }
 .header .layer.pic7{
-    background-image: url(../images/parallax7.png);
+    background-image: url(../images/cha04.png);
+    background-size: auto 400px;
+    background-position: 1700px 550px;
 }
 .header .layer.pic8{
-    background-image: url(../images/parallax8.png);
+    background-image: url(../images/cha05.png);
+    background-size: auto 400px;
+    background-position: 0 550px;
 }
 
 
-.container{width: 100vw;height: 100vh;}
-.conWrap{width: 1000px;margin: 0 auto;background: #fff;}
+/* content */
 
+
+.container{width: 100vw;height: 100vh;margin: 0 auto;}
+.conWrap{
+    display: flex;justify-content: center;
+    padding: 100px;
+}
+.container .movieWrap{width: 1000px;margin: 0 auto;}
+.container .movie{margin-bottom: 40px;height: 192px;}
+.container .movie h3{
+    color:white;text-align: center;
+    line-height: 30px;padding-top: 10px;
+}
+.container .left{float: left;margin-right: 20px;}
+.container .right{
+    float: left;position: relative;
+}
+.container .right img{width: 734px;height: 435px;transition: 0.5s;}
+.container .right .img01{
+    position: absolute;
+    width: 60px;height: 60px;
+    left: 50%;top: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.container .right img:hover{transform: scale(1.1);}
 
 /* common  */
-.brown{background: #210002;}
+.black{background: black;}
 .gray{background: gray;}
 .pink{background: pink;}

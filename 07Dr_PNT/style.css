@@ -1,0 +1,63 @@
+@charset 'utf-8';
+
+/* header */
+/* body{height: 400vh;} 화면에 스크롤이 생기려면 body에 높이값을 주어야함. */
+.header{
+    width: 100vw;height: 100vh;background: #002A6F;overflow: hidden;
+    position: relative;
+}
+/* 뷰포트(화면상에서의 뷰포트를 사용함) */
+.header .layer{
+    width: 100vw;height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 1000px;
+    position: absolute;transition: 0.3s;
+}
+.header .layer.pic0{
+    background-image: url(../images/p0.png);
+    background-size: auto 500px;
+}
+.header .layer.pic1{
+    background-image: url(../images/river.png);
+}
+.header .layer.pic2{
+    background-image: url(../images/sky01.png);
+    background-size: cover;
+}
+.header .layer.pic3{
+    background-image: url(../images/fire01.png);
+}
+.header .layer.pic4{
+    background-image: url(../images/cha01.png);
+    background-size: auto 400px;
+    background-position: 290px 580px;
+}
+.header .layer.pic5{
+    background-image: url(../images/cha02.png);
+    background-size: auto 300px;
+    background-position: 100px 500px;
+}
+.header .layer.pic6{
+    background-image: url(../images/cha03.png);
+    background-size: auto 200px;
+    background-position: 1450px 600px;
+}
+.header .layer.pic7{
+    background-image: url(../images/cha04.png);
+    background-size: auto 300px;
+    background-position: 1200px 600px;
+}
+.header .layer.pic8{
+    background-image: url(../images/parallax8.png);
+}
+
+
+.container{width: 100vw;height: 100vh;}
+.conWrap{width: 1000px;margin: 0 auto;background: #fff;}
+
+
+/* common  */
+.brown{background: #210002;}
+.gray{background: gray;}
+.pink{background: pink;}
