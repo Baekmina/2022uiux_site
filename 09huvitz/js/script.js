@@ -1,3 +1,10 @@
+// lang
+$(".lang div").click(function(){
+    $(".lang div").removeClass("active");
+    $(this).addClass("active");
+})
+
+
 // submenu
 $(".gnb>ul").hover(function(){
     $(this).find(".submenu").show();
@@ -6,6 +13,7 @@ $(".gnb>ul").hover(function(){
 })
 
 
+// toggle
 
 let chk = true;
 
@@ -20,6 +28,10 @@ $(".toggle").click(function(){
         chk = true;
     }
 });
+
+
+
+// bxslider
 
 var myslide = $(".slide").bxSlider({
     auto:true,
