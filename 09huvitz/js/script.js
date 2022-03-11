@@ -1,7 +1,28 @@
 // lang
 $(".lang div").click(function(){
+    let i = $(this).index();
     $(".lang div").removeClass("active");
     $(this).addClass("active");
+
+    if(i == 1){
+        $(".gnb ul").html(`
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">BUSINESS</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">SCIENCE</a></li>
+                    <li><a href="#">PR</a></li>
+                    <li><a href="#">INFORMATION</a></li>
+        `)
+    }else{
+        $(".gnb ul").html(`
+                    <li><a href="#">기업정보</a></li>
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">핵심경쟁력</a></li>
+                    <li><a href="#">투자정보</a></li>
+                    <li><a href="#">홍보센터</a></li>
+                    <li><a href="#">제품정보</a></li>
+        `)
+    }
 })
 
 
@@ -42,4 +63,16 @@ $(".prevBtn").click(function(){
 });
 $(".nextBtn").click(function(){
     myslide.goToNextSlide();
+});
+
+
+// contents 
+
+$(".modal a").colorbox({
+    rel:"modal"
+});
+$(".youtube").colorbox({
+    iframe:true,
+    innerWidth:1000,
+    innerHeight:562.5,
 });

@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/colorbox.css">
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
 </head>
 <body>
     <header>
@@ -21,52 +24,52 @@
                 <ul>
                     <li>
                         <a href="#">기업정보</a>
-                        <ul class="submenu">
+                        <!-- <ul class="submenu">
                             <li><a href="#">기업소개</a></li>
                             <li><a href="#">경영철학</a></li>
                             <li><a href="#">연혁</a></li>
                             <li><a href="#">오시는길</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li>
                         <a href="#">사업소개</a>
-                        <ul class="submenu">
+                        <!-- <ul class="submenu">
                             <li><a href="#">사업영역</a></li>
                             <li><a href="#">글로벌 네트워크</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li>
                         <a href="#">핵심경쟁력</a>
-                        <ul class="submenu">
+                        <!-- <ul class="submenu">
                             <li><a href="#">R&D 경쟁력</a></li>
                             <li><a href="#">품질 경쟁력</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li>
                         <a href="#">투자정보</a>
-                        <ul class="submenu">
+                        <!-- <ul class="submenu">
                             <li><a href="#">재무정보</a></li>
                             <li><a href="#">주가정보</a></li>
                             <li><a href="#">공고</a></li>
                             <li><a href="#">공시</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li>
                         <a href="#">홍보센터</a>
-                        <ul class="submenu">
+                        <!-- <ul class="submenu">
                             <li><a href="#">NEWS ROOM</a></li>
                             <li><a href="#">소통채널</a></li>
                             <li><a href="#">사회공헌</a></li>
                             <li><a href="#">CI</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li>
                         <a href="#">제품정보</a>
-                        <ul class="submenu">
+                        <!-- <ul class="submenu">
                             <li><a href="#">안광학기기</a></li>
                             <li><a href="#">산업용단층촬영센터</a></li>
                             <li><a href="#">3D 프린터</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                 </ul>
             </nav>
@@ -89,7 +92,6 @@
         <div class="backSilde">
             <ul class="slide">
                 <li style="background-image: url(images/visual_img01.png);" class="sImg">
-                    <a href="#"></a>
                     <!-- <img src="images/visual_img01.png" alt=""> -->
                     <div class="visualCard">
                         <h2>
@@ -103,7 +105,6 @@
                     </div>
                 </li>
                 <li style="background-image: url(images/visual_img02.png);" class="sImg">
-                    <a href="#"></a>
                     <!-- <img src="images/visual_img02.png" alt=""> -->
                     <div class="visualCard">
                         <h2>
@@ -117,7 +118,6 @@
                     </div>
                 </li>
                 <li style="background-image: url(images/visual_img03.jpg);" class="sImg">
-                    <a href="#"></a>
                     <!-- <img src="images/visual_img03.jpg" alt=""> -->
                     <div class="visualCard">
                         <h2>
@@ -141,9 +141,141 @@
             </div>
         </div>
     </div>
+    <h2 id="news">NEWS</h2>
     <div class="contents">
-
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="card">
+                        <img src="images/ic_news.png" alt="">
+                        <p>뉴스 보러가기</p>
+                    </div>
+                </a>
+            </li>
+            <li style="background-image: url(images/con01_01.png);" class="modal">
+                <a href="https://www.youtube.com/watch?v=Jfnruy8rQfg" class="youtube">
+                    <img src="images/ic_play.png" alt="">
+                </a>
+            </li>
+            <li>
+                <!-- 3 -->
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card">
+                        <img src="images/ic_company.png" alt="">
+                        <p>기업소개</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card">
+                        <img src="images/ic_graph.png" alt="">
+                        <p>투자정보</p>
+                    </div>
+                </a>
+            </li>
+            <li style="background-image: url(images/con01_03.png);">
+                <a href="#" class="flex-none pt39 pl38">
+                    <div class="textCard">
+                        <p>Better Technology, Better Life</p>
+                        <h3>“ 더 좋은 기술로<br>
+                            더 나은 삶을 구현합니다 ”</h3>
+                    </div>
+                </a>
+            </li>
+            <li style="background-image: url(images/con01_04.png);">
+                <a href="#" class="flex-none pt39 pl38">
+                    <div class="textCard">
+                        <p class="p1">안광학</p>
+                        <h3 class="t1">안구에<br>가장 적합한<br>
+                            광학 교정 방법을<br>제공
+                        </h3>
+                    </div>
+                </a>
+            </li>
+            <li style="background-image: url(images/con01_05.png);">
+                <a href="#" class="flex-none pt39 pl38">
+                    <div class="textCard">
+                        <p class="p2">렌즈가공</p>
+                        <h3 class="t1">혁신적인 가공 기술로<br>고객 맞춤 토탈 아이웨어<br>
+                            솔루션을 제공
+                        </h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card">
+                        <img src="images/ic_microscope.png" alt="">
+                        <p>주요사업</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card">
+                        <img src="images/ic_social.png" alt="">
+                        <p>사회공헌활동</p>
+                    </div>
+                </a>
+            </li>
+            <li style="background-image: url(images/con01_06.png);">
+                <a href="#" class="flex-none pt39 pr38">
+                    <div class="textCard tar">
+                        <p class="p3">산업용 3D 광학검사</p>
+                        <h3 class="t2">광간섭 단층촬영기술을<br>산업으로 확대해<br>
+                            실시간 고해상도 3D 입체 이미지를 제공
+                        </h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
+    <h2 id="vision">VISION</h2>
+    <div class="contents2">
+        <div class="wrap">
+            <div class="title">
+                <p>비젼</p>
+                <h2>VISION 2022</h2>
+            </div>
+            <ul class="clearfix">
+                <li>
+                    <img src="images/icon_books.png" alt="">
+                    <div class="card">
+                        <h3>LEARN</h3>
+                        <p>끊임없는 자기계발을 통해<br>전문지식을 학습하는 휴비츠인</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/ic_challenge.png" alt="">
+                    <div class="card">
+                        <h3>CHALLENGE</h3>
+                        <p>실패를 두려워하지 않고<br>도전하는 휴비츠인</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/ic_responsiblity.png" alt="">
+                    <div class="card">
+                        <h3>RESPONSIBILITY</h3>
+                        <p>주인의식을 바탕으로<br>책임을 다하는 휴비츠인</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/ic_respect.png" alt="">
+                    <div class="card">
+                        <h3>RESPECT</h3>
+                        <p>상호 소통과 협력을 통해 공동체<br>의식을 나누고 존중하는 휴비츠인</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contents3">
+        dfsdga
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
