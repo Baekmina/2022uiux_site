@@ -1,3 +1,7 @@
+// wow
+new WOW(). init();
+
+
 // lang
 $(".lang div").click(function(){
     let i = $(this).index();
@@ -63,6 +67,28 @@ $(".prevBtn").click(function(){
 });
 $(".nextBtn").click(function(){
     myslide.goToNextSlide();
+});
+
+var slide = $(".slider").bxSlider({
+    pager:false,
+});
+
+$(".left").click(function(){
+    slide.goToPrevSlide();
+});
+$(".right").click(function(){
+    slide.goToNextSlide();
+});
+
+var cSlide = $(".conSlide").bxSlider({
+    pager:false,
+    mode:"vertical",
+});
+$(".cprev").click(function(){
+    cSlide.goToPrevSlide();
+});
+$(".cnext").click(function(){
+    cSlide.goToNextSlide();
 });
 
 

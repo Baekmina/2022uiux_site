@@ -118,6 +118,11 @@
 
     /* contents2 */
     .contents2{width: 100%;}
-    .contents2 .wrap>ul>li{width: 50%;}
+    .contents2 .wrap{width: 100%;}
+    .contents2 .title{display: none;}
+    .contents2>.wrap>ul{}
+    .contents2>.wrap>ul>li{}
+    .contents2>.wrap>ul>li>.card h3{font-size: 20px;}
+    .contents2>.wrap>ul>li>.card p{font-size: 15px;}
 
 }
