@@ -27,7 +27,18 @@ $(".lang div").click(function(){
                     <li><a href="#">제품정보</a></li>
         `)
     }
-})
+});
+
+$(window).scroll(function(){
+    let scrollY = window.pageYOffset;
+    console.log(scrollY);
+
+    if(scrollY > 200){
+        $("#header").addClass("fixed");
+    }else{
+        $("#header").removeClass("fixed");
+    }
+});
 
 
 // submenu

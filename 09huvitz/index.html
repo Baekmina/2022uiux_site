@@ -7,6 +7,7 @@
     <title>Huvitz</title>
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,11 +16,12 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/wow.js"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="headerWrap">
             <h1><a href="#"><img src="images/logo_white.png" alt=""></a></h1>
             <nav class="gnb">
@@ -146,7 +148,7 @@
     <h2 id="news">NEWS</h2>
     <div class="contents">
         <ul>
-            <li>
+            <li class="wow fadeInLeft">
                 <a href="#">
                     <div class="card">
                         <img src="images/ic_news.png" alt="">
@@ -154,12 +156,12 @@
                     </div>
                 </a>
             </li>
-            <li style="background-image: url(images/con01_01.png);" class="modal">
+            <li style="background-image: url(images/con01_01.png);" class="modal wow fadeInDown" data-wow-delay="0.3s">
                 <a href="https://www.youtube.com/watch?v=Jfnruy8rQfg" class="youtube">
                     <img src="images/ic_play.png" alt="">
                 </a>
             </li>
-            <li class="news">
+            <li class="news wow fadeInRight" data-wow-delay="0.4s">
                 <ul class="slider">
                     <li class="item">
                         <ul>
@@ -180,7 +182,7 @@
                     <div class="right"><img src="images/btn_next02.png" alt=""></div>
                 </div>
             </li>
-            <li>
+            <li class="wow fadeInLeft">
                 <a href="#">
                     <div class="card">
                         <img src="images/ic_company.png" alt="">
@@ -188,7 +190,7 @@
                     </div>
                 </a>
             </li>
-            <li>
+            <li  class="wow fadeInDown">
                 <a href="#">
                     <div class="card">
                         <img src="images/ic_graph.png" alt="">
@@ -196,7 +198,7 @@
                     </div>
                 </a>
             </li>
-            <li style="background-image: url(images/con01_03.png);">
+            <li style="background-image: url(images/con01_03.png);" class="wow fadeInRight">
                 <a href="#" class="flex-none pt39 pl38">
                     <div class="textCard">
                         <p>Better Technology, Better Life</p>
@@ -205,7 +207,7 @@
                     </div>
                 </a>
             </li>
-            <li style="background-image: url(images/con01_04.png);">
+            <li style="background-image: url(images/con01_04.png);" class="wow fadeInUp">
                 <a href="#" class="flex-none pt39 pl38">
                     <div class="textCard">
                         <p class="p1">안광학</p>
@@ -215,7 +217,7 @@
                     </div>
                 </a>
             </li>
-            <li style="background-image: url(images/con01_05.png);">
+            <li style="background-image: url(images/con01_05.png);" class="wow fadeInDown" data-wow-delay="0.4s">
                 <a href="#" class="flex-none pt39 pl38">
                     <div class="textCard">
                         <p class="p2">렌즈가공</p>
@@ -225,7 +227,7 @@
                     </div>
                 </a>
             </li>
-            <li>
+            <li class="wow fadeInDown" data-wow-delay="0.5s">
                 <a href="#">
                     <div class="card">
                         <img src="images/ic_microscope.png" alt="">
@@ -233,7 +235,7 @@
                     </div>
                 </a>
             </li>
-            <li>
+            <li class="wow fadeInLeft">
                 <a href="#">
                     <div class="card">
                         <img src="images/ic_social.png" alt="">
@@ -241,7 +243,7 @@
                     </div>
                 </a>
             </li>
-            <li style="background-image: url(images/con01_06.png);">
+            <li style="background-image: url(images/con01_06.png);" class="wow fadeInRight" data-wow-delay="0.4s">
                 <a href="#" class="flex-none pt39 pr38">
                     <div class="textCard tar">
                         <p class="p3">산업용 3D 광학검사</p>
@@ -256,33 +258,33 @@
     <h2 id="vision">VISION</h2>
     <div class="contents2">
         <div class="wrap">
-            <div class="title">
+            <div class="title wow fadeInDown">
                 <p>비젼</p>
                 <h2>VISION 2022</h2>
             </div>
             <ul class="clearfix">
-                <li>
+                <li class="wow fadeInDown">
                     <img src="images/icon_books.png" alt="">
                     <div class="card">
                         <h3>LEARN</h3>
                         <p>끊임없는 자기계발을 통해<br>전문지식을 학습하는 휴비츠인</p>
                     </div>
                 </li>
-                <li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s">
                     <img src="images/ic_challenge.png" alt="">
                     <div class="card">
                         <h3>CHALLENGE</h3>
                         <p>실패를 두려워하지 않고<br>도전하는 휴비츠인</p>
                     </div>
                 </li>
-                <li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s">
                     <img src="images/ic_responsiblity.png" alt="">
                     <div class="card">
                         <h3>RESPONSIBILITY</h3>
                         <p>주인의식을 바탕으로<br>책임을 다하는 휴비츠인</p>
                     </div>
                 </li>
-                <li>
+                <li class="wow fadeInDown" data-wow-delay="0.5s">
                     <img src="images/ic_respect.png" alt="">
                     <div class="card">
                         <h3>RESPECT</h3>
