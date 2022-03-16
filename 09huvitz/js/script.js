@@ -31,7 +31,7 @@ $(".lang div").click(function(){
 
 $(window).scroll(function(){
     let scrollY = window.pageYOffset;
-    console.log(scrollY);
+    // console.log(scrollY);
 
     if(scrollY > 200){
         $("#header").addClass("fixed");
@@ -91,19 +91,42 @@ $(".right").click(function(){
     slide.goToNextSlide();
 });
 
-var cSlide = $(".conSlide").bxSlider({
-    pager:false,
-    mode:"vertical",
-});
-$(".cprev").click(function(){
-    cSlide.goToPrevSlide();
-});
-$(".cnext").click(function(){
-    cSlide.goToNextSlide();
-});
+var swiper = new Swiper(".myswiper", {
+    effect: "coverflow",
+    spaceBetween : 20,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop:true,
+    autoplay:{
+        delay:3000,
+    },
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+    el: ".swiper-pagination",
+    },
+    breakpoints:{
+        320:{
+            slidesPerView: 2, 
+            // spaceBetween: 20,
+        },
+        768:{
+            slidesPerView: "auto", 
+            spaceBetween: 20,
+        }
+    },
+})
 
 
 // contents 
+
+
 
 $(".modal a").colorbox({
     rel:"modal"
