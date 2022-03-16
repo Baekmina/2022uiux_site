@@ -348,7 +348,7 @@ footer{background: #F4F5F5;}
 .footerWrap .top>ul{display: flex;}
 .footerWrap .top .left>li{margin-right: 16px;font-size: 15px;color:#333333}
 .footerWrap .top .left>li:after{
-    content:""
+    content:"";
 }
 
 
