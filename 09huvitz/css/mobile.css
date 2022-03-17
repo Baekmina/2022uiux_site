@@ -78,8 +78,10 @@
     }
     .visual .bx-wrapper .bx-pager.bx-default-pager a.active{background: white;}
     
-    .visual .slide>li>.visualCard{transform: translate(20px,10px);}
+    .visual .slide>li>.visualCard{transform: translate(20px,140px);}
+    .visual .slide>li>.visualCard>h2{font-size: 45px;}
     .visual .button{display: none;}
+    .visual .bx-wrapper .bx-pager{display: none;}
 
 
     /* news title */

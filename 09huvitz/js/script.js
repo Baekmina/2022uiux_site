@@ -48,6 +48,11 @@ $(".gnb>ul").hover(function(){
     $(this).find(".submenu").hide();
 })
 
+function over(obj){
+    obj.style.backgrundColor = "white"
+    
+}
+
 
 // toggle
 
@@ -144,3 +149,9 @@ var swiper = new Swiper(".myswiper", {
 $(".modal a").colorbox({
     rel:"modal"
 });
+
+
+
+
+// sub company
+

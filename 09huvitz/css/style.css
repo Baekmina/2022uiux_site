@@ -50,11 +50,11 @@ body{font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
 
 .headerWrap .submenu{
     background: white;
-    position: absolute;
-    width: 100%;height: 150px;
+    position:absolute;
+    width: 100%;height: 180px;
     top: 72px;
     text-align: center;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .headerWrap .submenu a{
     display: block;text-align: center;line-height: 35px;
@@ -64,6 +64,7 @@ body{font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
 .headerWrap .personM{display: none;}
 
 .headerWrap .toggle{display: none;}
+
 
 
 /* visual */
@@ -378,3 +379,31 @@ footer{background: #F4F5F5;}
 .tar{text-align: right;}
 
 
+
+
+/* sub company  */
+
+.visual.company{
+    height: 500px;
+    background-size: cover;
+}
+.visual.company .textWrap{width: 1240px;margin: 0 auto;}
+.visual.company .text{transform: translateY(230px);}
+.visual.company .text h2{font-size: 50px;color:white;margin-bottom: 10px;}
+.visual.company .text p{font-size: 19px;color:white;}
+
+.bar.company{
+    width: 1240px;margin: 0 auto;height: 56px;
+    display: flex;align-items: center;
+}
+.bar.company>ul{display: flex;}
+.bar.company>ul>li{margin-right: 50px;position: relative;}
+.bar.company>ul>li>a{display: block;font-size: 17px;color:#333333;}
+.bar.company>ul>li>a:after{
+    content: "";display: block;
+    width: 1px;height: 20px;background: #c4c4c4;
+    position: absolute;top:2px;left: -25px;
+}
+.bar.company>ul>li:first-child a:after{content: "";display: none;}
+.bar.company>ul>li>a:hover{color:#7AB5C6}
+.bar.company>ul>li>a.active{color:#7AB5C6}
