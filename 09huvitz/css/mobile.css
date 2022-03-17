@@ -9,11 +9,12 @@
     .headerWrap{width: 100%;height: 56px;padding: 0 20px;}
     .headerWrap .gnb{
         position: fixed;margin: initial;
-        width: 100%;height: 100%;
+        width: 70%;height: 100%;
         display: flex;justify-content: center;align-items: center;
         transition: 0.3s;
         top: 0;left: -100%;
         background: white;
+        z-index: 11;
     }
     .headerWrap .gnb>ul{display: block;width: 80%;}
     .headerWrap .gnb>ul>li{margin-bottom: 20px;width: 100%;}
@@ -22,17 +23,32 @@
         display: block;font-size: 20px;font-weight: 500;
         text-align: right;color:#333333;
     }
+
+    .headerWrap .gnb>ul>li>a>span>img{
+        display: inline;margin-left: 10px;
+        width: 11px;height: 6px;
+        transform: translateY(-50%);
+    }
+
     .headerWrap .personM{
         display: flex;justify-content: center;align-items: center;
         margin-left: auto;
     }
     .headerWrap .personM>p{font-size: 14px;}
 
+    .overLayer{
+        position: fixed;width: 100%;height: 100%;
+        background: rgba(122, 181, 198, 0.5);
+        left: 0;top: 0;z-index: 10;
+        display: none;
+    }
+
     /* toggle */
     .headerWrap .toggle{
         width: 24px;height: 24px;padding: 6px 0;margin-left: 26px;
         display: flex;justify-content: center;align-items: center;
         cursor: pointer;
+        z-index: 99999;
     }
     .headerWrap .toggle div{
         width: 18px;height: 2px;background: #000;
@@ -46,7 +62,8 @@
     .headerWrap .toggle.active .bar3{transform: translateY(0) rotate(-45deg);}
 
 
-    .headerWrap .lang{display: none;}
+    .headerWrap .lang{position: fixed;z-index: 99999;left:165px;display: none;}
+    .headerWrap .lang div{border: 1px solid #7AB5C6;color:#7AB5C6;}
     .headerWrap .submenu{display: none;}
     
 
@@ -123,7 +140,7 @@
     .contents2>.wrap>ul{flex-wrap: wrap;}
     .contents2>.wrap>ul>li{
         width: calc((100% - 15px) / 2);
-        margin-bottom: 20px;;
+        margin-bottom: 20px;
     }
     .contents2>.wrap>ul>li>.card h3{font-size: 20px;}
     .contents2>.wrap>ul>li>.card p{font-size: 15px;}
@@ -182,5 +199,17 @@
         to{transform: translate(310px,0px);}
     }
     .contents4 .btn span{font-size: 13px;}
+
+
+    
+    /* footer */
+    .footerWrap{width: 100%;padding: 10px 16px;}
+    .footerWrap .top .left{display: none;}
+    .footerWrap .after{width: 100%;}
+    .footerWrap .top .right li{font-size: 15px;}
+    .footerWrap .bottom{display: block;}
+    .footerWrap .bottom p{font-size: 10px;margin-bottom: 5px;}
+    .footerWrap .bottom ul>li>a>img{width: 30px;height: 30px;}
+    .footerWrap address{font-size: 10px;}
 
 }

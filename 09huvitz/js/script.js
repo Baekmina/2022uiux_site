@@ -57,13 +57,24 @@ $(".toggle").click(function(){
     if(chk == true){
         $(this).addClass("active");
         $(".gnb").css("left",0);
+        $(".lang").css("display","flex");
+        $(".overLayer").show();
         chk = false;
     }else{
-        $(this).removeClass("active")
-        $(".gnb").css("left","-150%")
+        $(this).removeClass("active");
+        $(".gnb").css("left","-150%");
+        $(".lang").hide();
+        $(".overLayer").hide();
         chk = true;
     }
 });
+
+$(window).resize(function(){
+    $(".toggle").removeClass("active");
+    $(".gnb").removeAttr("style");
+    $(".lang").removeAttr("style");
+    $(".overLayer").hide();
+})
 
 
 
@@ -71,6 +82,7 @@ $(".toggle").click(function(){
 
 var myslide = $(".slide").bxSlider({
     auto:true,
+    controls:false,
 });
 
 $(".prevBtn").click(function(){
@@ -82,6 +94,7 @@ $(".nextBtn").click(function(){
 
 var slide = $(".slider").bxSlider({
     pager:false,
+    controls:false,
 });
 
 $(".left").click(function(){
@@ -114,7 +127,7 @@ var swiper = new Swiper(".myswiper", {
     breakpoints:{
         320:{
             slidesPerView: 2, 
-            // spaceBetween: 20,,
+            // spaceBetween: 20,
         },
         768:{
             slidesPerView: "auto", 
@@ -130,9 +143,4 @@ var swiper = new Swiper(".myswiper", {
 
 $(".modal a").colorbox({
     rel:"modal"
-});
-$(".youtube").colorbox({
-    iframe:true,
-    innerWidth:1000,
-    innerHeight:562.5,
 });
