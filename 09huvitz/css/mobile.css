@@ -266,8 +266,10 @@
     .contents1.company .title h2{font-size: 35px;margin-bottom: 20px;}
     .contents1.company .title p{font-size: 14px;}
 
+    .contents1.company .textBg{width: 100%;}
+
     
-    .contents1.company .cols .col{width: calc(40%);height: 191px;}
+    .contents1.company .cols .col{width: calc(40%);height: 191px;z-index: 0;}
     .contents1.company .cols .col .container img{width: 80px;height: 74px;}
     .contents1.company .cols .col .container h2{font-size: 30px;}
     .contents1.company .cols .col .container h2 span{font-size: 17px;}
@@ -281,9 +283,7 @@
     .contents_two.company .title h2{font-size: 35px;margin-bottom: 20px;}
     .contents_two.company .title p{font-size: 13px;line-height: 25px;}
 
-    .contents_two.company .cols2 .col2{
-        width: calc(45%);height: 200px;
-    }
+    .contents_two.company .cols2 .col2{width: calc(45%);height: 200px;}
 
     .contents_two.company .cols2 .col2 .container h2{font-size: 35px;}
     .contents_two.company .cols2 .col2 .container h2 span{font-size: 20px;}
