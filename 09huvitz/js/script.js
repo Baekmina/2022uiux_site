@@ -42,16 +42,12 @@ $(window).scroll(function(){
 
 
 // submenu
-$(".gnb>ul").hover(function(){
+$(".gnb>ul>li").hover(function(){
     $(this).find(".submenu").show();
 },function(){
     $(this).find(".submenu").hide();
 })
 
-function over(obj){
-    obj.style.backgrundColor = "white"
-    
-}
 
 
 // toggle
@@ -77,6 +73,7 @@ $(".toggle").click(function(){
 $(window).resize(function(){
     $(".toggle").removeClass("active");
     $(".gnb").removeAttr("style");
+    // $(".submenu").hide();
     $(".lang").removeAttr("style");
     $(".overLayer").hide();
 })
@@ -154,4 +151,15 @@ $(".modal a").colorbox({
 
 
 // sub company
+$(".bar.company .m_menu>ul>li").hover(function(){
+    $(this).find(".m_subMenu").show();
+},function(){
+    $(this).find(".m_subMenu").hide();
+});
+
+$(".bar.company .m_sub>ul>li").hover(function(){
+    $(this).find(".m_sub02").show();
+},function(){
+    $(this).find(".m_sub02").hide();
+});
 

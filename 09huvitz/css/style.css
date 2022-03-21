@@ -49,12 +49,13 @@ body{font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
 /* submemu */
 
 .headerWrap .submenu{
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     position:absolute;
-    width: 100%;height: 180px;
+    width: 100%;height: 150px;
     top: 72px;
     text-align: center;
     transition: 0.3s;
+    display: none;
 }
 .headerWrap .submenu a{
     display: block;text-align: center;line-height: 35px;
@@ -499,3 +500,83 @@ footer{background: #F4F5F5;}
 .contents_two.company .cols2 .col2 .container p{font-size: 16px;color:#555555;}
 
 .contents_two.company .cols2 .col2:hover{transform: scale(1.1);}
+
+
+
+
+/* sub company01 */
+.contents1.company .com_img01,
+.contents1.company .com_img02{margin-bottom: 150px;}
+.contents1.company .com_img03{display: flex;justify-content: center;}
+
+.contents1.company .com_img01 img,
+.contents1.company .com_img02 img,
+.contents1.company .com_img03 img{width: 100%;}
+
+
+/* sub company03 */
+.contents1.company .com_img05{transform: translateY(150px);margin-bottom: 300px;}
+.contents1.company .com_img06,
+.contents1.company .com_img07{margin-bottom: 150px;}
+
+.contents1.company .com_img05 img,
+.contents1.company .com_img06 img,
+.contents1.company .com_img07 img,
+.contents1.company .com_img08 img{width: 100%;}
+
+
+/* sub business  */
+.contents1.company .bs_img01{margin-bottom: 0;}
+.contents1.company .bs_img01 img,
+.contents1.company .bs_img02 img{width: 100%;}
+
+
+/* sub business01  */
+
+.contents1.company .bs_img03{margin-bottom: 150px;}
+.contents1.company .bs_img04{margin-bottom: 100px;}
+
+.contents1.company .bs_img03 img,
+.contents1.company .bs_img04 img,
+.contents1.company .bs_img05 img{width: 100%;}
+
+
+
+/* sub rnd  */
+.contents1.company .rnd_img01 img{width: 100%;}
+.rnd_img02 img{width: 100%;}
+
+
+/* sub notice  */
+.contents1.company .no_img01{transform: translateY(150px);margin-bottom: 160px;}
+.contents1.company .no_img01 img,
+.contents1.company .no_img02 img{width: 100%;}
+
+.contents1.company .no_img06{transform: translateY(150px);margin-bottom: 150px;}
+.contents1.company .no_img06 img,
+.contents1.company .no_img07 img{width: 100%;}
+
+/* sub newsrooms  */
+
+.contents1.company .news_img04 img,
+.contents1.company .news_img05 img,
+.contents1.company .news_img06 img,
+.contents1.company .news_img07 img{width: 100%;}
+
+
+.contents1.company .news_img11{margin-bottom: 0;}
+
+.contents1.company .news_img08 img,
+.contents1.company .news_img09 img,
+.contents1.company .news_img10 img,
+.contents1.company .news_img11 img{width: 100%;}
+
+
+/* sub product */
+.contents1.company .pd_img01{transform: translateY(150px);margin-bottom: 160px;}
+
+.contents1.company .pd_img01 img,
+.contents1.company .pd_img02 img,
+.contents1.company .pd_img03 img,
+.contents1.company .pd_img04 img,
+.contents1.company .pd_img05 img{width: 100%;}
