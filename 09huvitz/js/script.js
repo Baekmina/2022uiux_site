@@ -143,8 +143,10 @@ var swiper = new Swiper(".myswiper", {
 
 
 
-$(".modal a").colorbox({
-    rel:"modal"
+$(".youtube").colorbox({
+    iframe:true,
+    innerWidth:1000,
+    innerHeight:562.5,
 });
 
 
