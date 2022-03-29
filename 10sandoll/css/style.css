@@ -1,0 +1,67 @@
+@charset 'utf-8';
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* header */
+.nav{z-index: 1;}
+.navbar{width: 100%;}
+.navbar .navbar-brand img{width: 70px;}
+
+.form-control{border-radius: 20px;}
+.nav form{position: relative;width: 300px;}
+.nav form button.btn,
+.nav form button.btn-cam{
+    position: absolute;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px;
+    right: 16px;
+    width: 24px;height: 24px;
+}
+.nav form button.btn{background-image: url(../images/ic_search.png);}
+.nav form button.btn-cam{
+    background-image: url(../images/ic_camera.png);
+    right: 56px;
+    border: 0 none;
+    background-color: #fff;
+}
+
+
+/* visual */
+.visual{height: 100vh;position: relative;}
+.visual .container video{
+    width: 100%;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+.visual .container .playBtn{
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.visual .container .playBtn img{width: 80px;height: 80px;}
+
+.visual .scrolldown{
+    z-index: 1;
+    display: block;
+    border-width: 20px;
+    border-color: #3A70FF transparent transparent transparent;
+    border-style: solid;
+    position: absolute;
+    bottom: 20px;left: 50%;
+    
+    animation-name:scrolldown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes scrolldown{
+    from{bottom: 20px;}
+    to{bottom: 40px;}
+}
+
+
