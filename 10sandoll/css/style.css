@@ -4,6 +4,10 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+:root{
+    --shadow-color1:3px 3px 10px rgba(0,0,0,0.3);
+}
+
 /* header */
 .nav{z-index: 1;}
 .navbar{width: 100%;}
@@ -35,6 +39,7 @@ body{
 .visual{height: 100vh;position: relative;}
 .visual .container video{
     width: 100%;
+    height: auto;
     top: 50%;left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -52,7 +57,7 @@ body{
     border-color: #3A70FF transparent transparent transparent;
     border-style: solid;
     position: absolute;
-    bottom: 20px;left: 50%;
+    bottom: 60px;left: 50%;
     
     animation-name:scrolldown;
     animation-duration: 1s;
@@ -60,8 +65,68 @@ body{
     animation-direction: alternate;
 }
 @keyframes scrolldown{
-    from{bottom: 20px;}
-    to{bottom: 40px;}
+    from{bottom: 60px;}
+    to{bottom: 80px;}
+}
+.content1 .info{
+    width: auto;
+    max-width: 350px;
+    word-break: keep-all;
+    margin-left: calc((100vw - 1160px)/2);
+    margin-right: 255px !important;
+}
+.content1 .info p{font-size: 16px;}
+.content1 .info h3{font-size: 32px;}
+.content1 .right{
+    margin-left: auto;
+    width: 50%;
 }
 
+
+.content3{height: 400px;}
+.content3>h3{
+    max-width: 1160px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.content3 .card{border: 0 none;transition: 0.3s;}
+.content3 .card:hover{
+    box-shadow: var(--shadow-color1);
+    transform: scale(1.02);
+}
+.content3 .card img{height: 200px;}
+.content3 p{color:#3A70FF;font-size: 15px;}
+.content3 .row{
+    max-width: 1555px;
+    float: right;
+}
+.content3 .row h3{font-size: 20px;}
+
+
+.use img{height: auto}
+.use .owl-item{padding: 30px;transition: 0.3s;opacity: 0.5;}
+.use .owl-item.center{padding: 0px;opacity: 1;}
+
+
+footer{
+    padding: 60px 0;
+    background: #f9f9f9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+footer .fs-title-5{width: 180px;font-size: 14px;font-weight: bold;}
+footer .fs-title-2{font-size: 26px;font-weight: bold;}
+footer .fs-title-2 p{font-size: 14px;font-weight: normal;}
+
+
+
+.container-1160{
+    width: 1160px;
+    overflow: hidden;
+    margin: 0 auto;
+}
 

@@ -11,15 +11,18 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
     <div class="nav position-relative">
-        <nav class="navbar navbar-expand-lg navbar-black bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
               <div class="container">
                 <a class="navbar-brand px-4" href="index.html">
                     <img src="images/ic_sandollcloud.png" alt="">
@@ -59,7 +62,7 @@
           </div>
         </nav>
     </div>
-    <div class="visual">
+    <div class="visual mb-lg-5 position-relative">
         <div class="container">
             <video autoplay muted loop class="position-absolute">
                 <source src="images/main.mp4" type="">
@@ -68,23 +71,227 @@
             <a href="#!" class="scrolldown d-none d-md-flex"></a>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="info col-md-6">
-                <p class="info-title-2">산돌구름 셀렉샵</p>
-                <h3 class="info-title-1">셀렉샵 좋은글씨 겨울햇살</h3>
-                <p class="info-text">1패밀리 1종 3,900원</p>
-                <a href="#!" class="btn btn-primary  ">자세히 보기</a>
+    <div class="content1 py-3 py-lg-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 d-flex order-2 order-md-1">
+                    <div class="info text-center text-md-start m-auto mt-md-0 me-md-5">
+                        <p class="info-title-2">산돌구름 셀렉샵</p>
+                        <h3 class="info-title-1">셀렉샵 좋은글씨 손글씨</h3>
+                        <p class="info-text">1패밀리 1종 3,900원</p>
+                        <a href="#!" class="btn btn-dark text-white">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="right col-md-6 order-1 order-md-2">
+                    <img src="images/content01_02.png" alt="" class="img-fluid">
+                </div>
             </div>
+            
         </div>
     </div>
     
+    <div class="content2 mb-5">
+        <div class="container-fluid">
+            <div class="row py-lg-5">
+                <div class="right col-md-6">
+                    <img src="images/content02_01.png" alt="" class="img-fluid">
+                </div>
+                <div class="info col-md-6 text-center text-md-start">
+                    <p class="info-title-2 mt-3 mt-md-0">신규폰트</p>
+                    <h3 class="info-title-1 mb-3">김수영 시인과의 산책, TSC겨울의 사랑</h3>
+                    <a href="#!" class="btn btn-dark text-white">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content3 mb-5">
+        <h3 class="title fs-title-2 text-center text-md-start mb-4">스토리</h3>
+        <div class="row">
+            <div class="story col-12 col-sm-6 col-lg-3">
+                <div class="card">
+                    <img src="images/content03_01.png" alt="" class="img-fluid">
+                    <div class="card-body text-center text-md-start">
+                        <p class="fs-txt-4">캠페인</p>
+                        <h3 class="fs-title-3">라이선스통합</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="story col-sm-6 col-lg-3">
+                <div class="card">
+                    <img src="images/content03_02.png" alt="">
+                    <div class="card-body text-center text-md-start">
+                        <p class="fs-txt-4">캠페인</p>
+                        <h3 class="fs-title-3">폰트안심학교</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="story col-sm-6 col-lg-3">
+                <div class="card">
+                    <img src="images/content03_03.png" alt="">
+                    <div class="card-body text-center text-md-start">
+                        <p class="fs-txt-4">이벤트</p>
+                        <h3 class="fs-title-3">검색 퀴즈 풀면 에어팟! 검색찾쓰 EVENT</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="story col-sm-6 col-lg-3">
+                <div class="card">
+                    <img src="images/content03_05.jpg" alt="">
+                    <div class="card-body text-center text-md-start">
+                        <p class="fs-txt-4">이벤트</p>
+                        <h3 class="fs-title-3">무료 템플릿&목업 나눔 EVENT</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio mt-md-5 mb-bd-5">
+        <div class="container px-lg-0">
+            <h3 class="mb-4 text-center">브랜드</h3>
+            <div class="wrap-fluid text-center">
+                <div class="btn-group mb-4 m-auto">
+                    <button class="btn btn-dark active" data-filter="" id="btnAll">전체</button>
+                    <button class="btn btn-dark" data-filter=".Emotion">감성</button>
+                    <button class="btn btn-dark" data-filter=".fun">재밌는</button>
+                    <button class="btn btn-dark" data-filter=".attractive">매력적</button>
+                </div>
+            </div>
+            <div class="row view">
+                <div class="col-6 col-lg-3 element-item fun mb-3">
+                   <img src="images/brand_Ahnsamyeol.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item Emotion mb-3">
+                    <img src="images/brand_arphic.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item attractive mb-3">
+                    <img src="images/brand_cadson.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item fun mb-3">
+                    <img src="images/brand_CH.jpeg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item attractive mb-3">
+                    <img src="images/brand_company.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item attractive mb-3">
+                    <img src="images/brand_Daintype.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item fun mb-3">
+                    <img src="images/brand_Dinamo.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item Emotion mb-3">
+                    <img src="images/brand_DXKOREA.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item fun mb-3">
+                    <img src="images/brand_GHEAfonts.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item Emotion mb-3">
+                    <img src="images/brand_goodfont.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item attractive mb-3">
+                    <img src="images/brand_Hangulssi.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item fun mb-3">
+                    <img src="images/brand_Hellofont.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item attractive mb-3">
+                    <img src="images/brand_login.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item attractive mb-3">
+                    <img src="images/brand_monotype.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item Emotion mb-3">
+                    <img src="images/brand_sandoll.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item attractive mb-3">
+                    <img src="images/brand_soulfont..png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item Emotion mb-3">
+                    <img src="images/brand_Tlab.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item Emotion mb-3">
+                    <img src="images/brand_Typotheque.png" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item attractive mb-3">
+                    <img src="images/brand_Typo.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-lg-3 element-item fun mb-3">
+                    <img src="images/brand_TypeTogether.jpg" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="use pt-5 mb-5">
+        <div class="container px-0">
+            <h3 class="text-center mb-4">폰트 인 유즈</h3>
+            <div class="owl-carousel owl-theme owl-loaded" id="owlSlider">
+                <img src="images/content05_01.jpeg" alt="">
+                <img src="images/content05_02.jpg" alt="">
+                <img src="images/content05_03.png" alt="">
+                <img src="images/content05_04.jpeg" alt="">
+                <img src="images/content05_06.jpg" alt="">
+                <img src="images/content05_07.jpg" alt="">
+                <img src="images/content05_09.jpg" alt="">
+                <img src="images/content05_10.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer style="background-image: url(images/footer.png);">
+        <div class="container-1160 d-flex">
+            <div class="col-12 col-lg-8">
+                <ul class="d-flex">
+                    <li class="fs-title-5 px-5 py-2">고객센터</li>
+                    <li class="fs-title-2">
+                        1688-4001<br>
+                        <a href="#!">cs@sandoll.co.kr</a>
+                        <p class="fs-txt-3 my-2">월~금 10:00-17:00 (점심시간 12:30-13:30)</p>
+                    </li>
+                </ul>
+                <ul class="d-flex">
+                    <li class="px-5" style="width:180px;">ABOUT US</li>
+                    <li class="fs-txt-3">
+                        <a href="#!">회사소개</a>
+                        <a href="#!">서비스소개</a>
+                        <a href="#!">인재채용</a>
+                        <a href="#!">폰트 안심학교</a>
+                        <a href="#!">폰트 사용 범위 통합 캠페인</a>
+                    </li>
+                </ul>
+                <ul class="d-flex">
+                    <li class="px-5" style="width:180px;">제휴제안</li>
+                    <li class="fs-txt-3">
+                        <a href="#!">제휴광고문의</a>
+                        <a href="#!">입점문의</a>
+                        <a href="#!">무료폰트 등록 신청</a>
+                    </li>
+                </ul>
+                <ul class="d-flex">
+                    <li class="px-5" style="width:180px;">고객지원</li>
+                    <li class="fs-txt-3">
+                        <a href="#!">1:1문의</a>
+                        <a href="#!">정품인증</a>
+                        <a href="#!">온라인 견적서</a>
+                        <a href="#!">서비스 매뉴얼</a>
+                        <a href="#!">폰트 사용 범위</a>
+                    </li>
+                </ul>
+                <ul class="d-flex">
+                    <li><a href="#!">이용약관</a></li>
+                    <li><a href="#!">개인정보 처리방침</a></li>
+                    <li><a href="#!">사이트맵</a></li>
+                    <li><a href="#!">원격지원</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     
 
 
     <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
