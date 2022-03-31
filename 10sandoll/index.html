@@ -37,7 +37,7 @@
                             <a class="nav-link" href="#">폰트</a>
                         </li>
                         <li class="nav-item px-lg-4">
-                            <a class="nav-link" href="#">무료폰트</a>
+                            <a class="nav-link" href="free.html">무료폰트</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">스토어</a>
@@ -62,14 +62,27 @@
           </div>
         </nav>
     </div>
-    <div class="visual mb-lg-5 position-relative">
+    <div class="visual mb-lg-5 position-relative" tabindex="0">
         <div class="container">
             <video autoplay muted loop class="position-absolute">
                 <source src="images/main.mp4" type="">
             </video>
-            <a class="playBtn position-absolute"><img src="images/btn-play-pc.png" alt=""></a>
+            <a href="images/main 30s.mp4" class="playBtn position-absolute" type="button" data-bs-toggle="modal" id="playBtn" data-bs-target="#videoModal"><img src="images/btn-play-pc.png" alt=""></a>
             <a href="#!" class="scrolldown d-none d-md-flex"></a>
         </div>
+        <!-- <div id="alertModal" style="display: none;"></div>
+        <div class="modal modal-fullscreen show d-block" tabindex="-1" data-bs-backdrop="false" aria-modal="true" aria-labelledby="videoModalLabel" id="videoModal" style="display: block;" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <video webkit-playsinline playsinline id="30s_video">
+                            <source src="images/main 30s.mp4" type="video/mp4">
+                        </video>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
     <div class="content1 py-3 py-lg-5">
         <div class="container-fluid">
@@ -86,10 +99,8 @@
                     <img src="images/content01_02.png" alt="" class="img-fluid">
                 </div>
             </div>
-            
         </div>
     </div>
-    
     <div class="content2 mb-5">
         <div class="container-fluid">
             <div class="row py-lg-5">

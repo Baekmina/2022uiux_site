@@ -1,11 +1,40 @@
 // visual modal
-// $(".visual .playBtn").colorbox({
+// $(function(){
+//     $("#alertDelAuthorityModal").modal("show");
+// });
+
+// var alertSize = 0;
+// var opt = null;
+
+// var alertCookie = document.cookie;
+// if(alertCookie .indexOf("alert_display=none")>0){
+//     $("#alertModal").hide();
+// }
+
+
+// var videoModal = document.getElementById("videiModal");
+// videoModal.addEventListener("show.bs.modal", function(event){
+//     $("#30s_video").get(0).play();
+// });
+// videoModal.addEventListener("hide.bs.modal", function(event){
+//     $("#30s_video").get(0).pause();
+// })
+
+// var platBtn = new bootstrap.Modal(document.getElementById("playBtn"),{
+//     keyboard:false
+// })
+
+
+
+// $("#playBtn").colorbox({
 //     iframe:true,
+//     innerWidth:"100%",
+//     innerHeight:auto,
 // });
 
 
-// owlSlider1
-// $(".owlSlider1").owlCarousel({
+//owlSlider1
+// $("#carouselSlide1").owlCarousel({
 //     loop:true,
 //     autoplay:true,
 // });

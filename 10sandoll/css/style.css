@@ -47,6 +47,7 @@ body{
     top: 50%;left: 50%;
     transform: translate(-50%,-50%);
     cursor: pointer;
+    transition: 0.3s;
 }
 .visual .container .playBtn img{width: 80px;height: 80px;}
 
@@ -68,6 +69,41 @@ body{
     from{bottom: 60px;}
     to{bottom: 80px;}
 }
+
+/* #videoModal{background: #000;}
+.modal{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 1060;
+    width: 100%;height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+#videoModal.show .modal-dialog{width: 100%;margin: 0 auto;}
+#videoModal .modal-dialog{max-width: 100%;transition: all 0.3s;}
+.modal.show .modal-dialog{transform: none;}
+.modal-fullscreen{
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+}
+.modal-fullscreen .modal-content{height: 100%;border: 0;border-radius: 0;}
+.modal-fullscreen .modal-body{overflow-y: auto;}
+.modal-body{position: relative;flex:1 1 auto}
+
+#videoModal .modal-dialog video{width: 100%;}
+#videoModal .modal-dialog .btn-close{
+    position: absolute;top: 30px;right: 30px;
+    z-index: 999;opacity: 1;
+    width: 30px;height: 30px;
+} */
+
+
+
+
 .content1 .info{
     width: auto;
     max-width: 350px;
@@ -141,4 +177,16 @@ footer .sns a img{width: 32px;height: 32px;}
     overflow: hidden;
     margin: 0 auto;
 }
+.w-100{
+    width: 100% !important;
+}
 
+
+
+
+/* sub free  */
+
+.content.free .free_card{
+    width: calc( (100% - 30px) / 3 );
+}
+.content.free .free_card .free_card_bottom>img{max-width: 100%;}
