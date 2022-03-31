@@ -221,7 +221,11 @@ body{font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
 
 
 /* vision contents2 */
-.contents2{background:#7AB5C6;padding: 120px;margin-bottom: 84px;}
+.contents2{
+    background:#7AB5C6;padding: 120px;margin-bottom: 84px;
+    background: url(../images/vision_img.png) no-repeat center fixed;
+    background-size: cover;
+}
 .contents2 .wrap{width: 1240px;margin: 0 auto;}
 .contents2 .title{position: relative;margin-bottom: 95px;color:white}
 .contents2 .title p{font-size: 18px;text-align: center;font-weight: bold;margin-bottom: 28px;}
