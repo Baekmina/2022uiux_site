@@ -8,3 +8,4 @@
 7. dr.pnt http://baekmina.github.io/2022uiux_site/07Dr_PNT
 8. parallax http://baekmina.github.io/2022uiux_site/08parallax
 9. huvitz http://baekmina.github.io/2022uiux_site/09huvitz
+10. bootstrap http://baekmina.github.io/2022uiux_site/10sandoll

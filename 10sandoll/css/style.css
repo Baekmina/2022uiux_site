@@ -118,11 +118,20 @@ footer{
     background-size: contain;
 }
 
+
+footer .footerList{padding-left: 0;}
+footer .footerList li{padding-left: 0 !important;}
 footer .fs-title-5{width: 180px;font-size: 14px;font-weight: bold;}
 footer .fs-title-2{font-size: 26px;font-weight: bold;}
 footer .fs-title-2 p{font-size: 14px;font-weight: normal;}
 
+footer .list5{margin-left: 0 !important;}
+footer .list5 li{margin-right: 5px;}
+footer .list5 li:nth-child(2){margin-left: 50px;}
+footer .list2,
+footer .list4{width: 180px;}
 
+footer .fs-txt-4{color:#999999;font-size: 13px;}
 
 .container-1160{
     width: 1160px;
