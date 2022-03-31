@@ -8,14 +8,17 @@
     .content1 .info{margin:0 auto !important;}
 
     footer{padding: 20px 16px;height: auto;background-size: cover;}
-    footer .container-1160{width: 100%;}
+    footer .container-1160{width: 100%;flex-direction: column;}
     footer ul{padding-left: 0;}
     footer ul .fs-txt-3>a{font-size: 15px;}
     footer .list1,
     footer .fs-title-5{width: 90px;}
     footer .list2{width: 112px;}
     footer .list4{width: 95px;}
-    footer .list5 li>a{font-size: 15px;}
+    footer .list5 li>a{font-size: 14px;}
     footer .list5 li:nth-child(2){margin-left: 0;}
     footer .fs-title-2{font-size: 16px;font-weight: bold;}
+
+
+    footer .sns{}
 }

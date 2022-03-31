@@ -115,7 +115,7 @@ footer{
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 
@@ -123,15 +123,18 @@ footer .footerList{padding-left: 0;}
 footer .footerList li{padding-left: 0 !important;}
 footer .fs-title-5{width: 180px;font-size: 14px;font-weight: bold;}
 footer .fs-title-2{font-size: 26px;font-weight: bold;}
-footer .fs-title-2 p{font-size: 14px;font-weight: normal;}
+footer .fs-title-2 p{font-size: 14px;font-weight: normal;color:#666666}
 
 footer .list5{margin-left: 0 !important;}
 footer .list5 li{margin-right: 5px;}
-footer .list5 li:nth-child(2){margin-left: 50px;}
 footer .list2,
 footer .list4{width: 180px;}
 
+footer .fs-txt-3>a{color:#666666 !important;}
 footer .fs-txt-4{color:#999999;font-size: 13px;}
+
+
+footer .sns a img{width: 32px;height: 32px;}
 
 .container-1160{
     width: 1160px;
