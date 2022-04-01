@@ -25,20 +25,14 @@
 // })
 
 
-
-// $("#playBtn").colorbox({
-//     iframe:true,
-//     innerWidth:"100%",
-//     innerHeight:auto,
-// });
-
-
-//owlSlider1
-// $("#carouselSlide1").owlCarousel({
-//     loop:true,
-//     autoplay:true,
-// });
-
+$("#playBtn").click(function(){
+    $(".vfixed").show();
+    $("#30s").get(0).play();
+});
+$(".closeX").click(function(){
+    $(".vfixed").hide();
+    $("#30s").get(0).pause();
+});
 
 
 // portfolio
@@ -65,7 +59,7 @@ window.onload = function(){
 
 //owlslider
 $("#owlSlider").owlCarousel({
-    loop:false,
+    loop:true,
     center:true,
     autoplay:true,
     margin:30,
@@ -74,4 +68,17 @@ $("#owlSlider").owlCarousel({
         600:{items:2},
         1000:{items:4},
     }
+});
+
+
+// laze-load
+const lazyLoad = document.querySelectorAll(".lazy-load"); // 모든 이미지 파일 선택
+window.addEventListener("scroll", (event) => {
+    lazyLoad.forEach((view) => { // 각 이미지마다
+        console.log("Scrolling...");
+        const rect = view.getBoundingClientRect().top; // getBoundingClientRect = pageYOffset(해당 높이)와 똑같음.
+        if (rect <= window.innerHeight) { // 이미지가 보일 타이밍을 계산
+            view.classList.add("fade"); // 트랜지션 추가
+        }
+    });
 });
