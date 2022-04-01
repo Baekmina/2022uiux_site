@@ -33,7 +33,11 @@ body{
     border: 0 none;
     background-color: #fff;
 }
-
+.nav form button.btn-cam:after{
+    content:"";display: block;
+    width: 1px;height: 20px;background: #ccc;
+    position: absolute;top: 3px;right: -10px;
+}
 
 /* visual */
 .visual{height: 100vh;position: relative;}
