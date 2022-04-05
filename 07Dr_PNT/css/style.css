@@ -6,6 +6,9 @@ body{font-family: 'Assistant', sans-serif;}
     --box-shadow1: 10px 10px 20px rgba(0,0,0,0.3);
 }
 
+.lazy-load{transform: translateY(100px);transition:1s;opacity: 0;}
+.lazy-load.fade{transform: translateY(0);opacity: 1}
+
 .navbar form input{border-radius: 30px;}
 .navbar form .btn{
     background: url(../images/ic_search.png) no-repeat center;
@@ -23,6 +26,7 @@ body{font-family: 'Assistant', sans-serif;}
 .video iframe{
     object-fit: fill;
     width: 100%;
+    height: 500px;
     border-radius: 5px;
     box-shadow: var(--box-shadow1);
 }
@@ -30,6 +34,23 @@ body{font-family: 'Assistant', sans-serif;}
     border-radius: 5px;
 }
 
+.clinic>.row>div{top: 50%;transform: translateY(-50%);}
+
+.insta .insta_logo{width: 200px;}
+.insta button{
+    background: url(../images/insta_plus_button.png) no-repeat center;
+    background-size: contain;
+    width: 48px;height: 18px;
+    border: 0;
+    float: right;
+    margin-top: 20px;
+}
+.content .img-card img{max-width: 300px !important;right: 10rem;top: -3rem;}
+
+.contact{
+    background: url(../images/pill.jpg) no-repeat center;
+    background-size: cover;
+}
 
 
 /* common */

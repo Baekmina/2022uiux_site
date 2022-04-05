@@ -1,8 +1,15 @@
-var slide = $(".slide_one").bxSlider();
+const swiper = new Swiper('.swiper', {
+    loop: true,
 
-$(".prevBtn").click(function () {
-    slide.goToPrevSlide();
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
-$(".nextBtn").click(function () {
-    slide.goToNextSlide();
-});
+
+$(".insta .filter div").hover(function(){
+    console.log($(this).index())
+    $(this).find(".insta_img").removeClass("reyes")
+},function(){
+    $(".insta_img").addClass("reyes")
+})
