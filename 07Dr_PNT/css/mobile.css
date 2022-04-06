@@ -3,4 +3,7 @@
     .video iframe{
         height: 300px;
     }
+    .footer .list>ul>li{
+        font-size: 12px;
+    }
 }
