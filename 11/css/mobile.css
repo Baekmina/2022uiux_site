@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+@media screen and (max-width:568px){
+    .section.page1{height: 684px !important;}
+    .section.page1 .fp-tableCell{height: 684px !important;}
+    .section.page1 .front{height: 684px !important;}
+    #video{height: 684px;}
+    .section.page1 .nextBtn{
+        position: absolute;z-index: 1;
+        left: 50%;transform: translateX(-50%);
+        bottom: -100px;
+        animation:scroll 0.8s infinite alternate;
+    }
+    @keyframes scroll{
+        to{bottom: -70px;}
+    }
+    
+    .section.page2{height: 511px !important;}
+}
