@@ -16,4 +16,6 @@
     }
     
     .section.page2{height: 511px !important;}
+
+    .section.page3 .character H2{font-size: 33px;}
 }
