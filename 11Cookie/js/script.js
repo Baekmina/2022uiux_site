@@ -42,20 +42,26 @@ var swiper1 = new Swiper('.mainSwiper', {
 
 // page3 swiper
 
-// $(".tab_wrap ul li").click(function(){
+$(".tab_wrap ul li").click(function(e){
+  e.preventDefault();
 
-//   let i = $(".tab_con .tab_list").index();
+  let i = $(this).index();
+  console.log($(this).index())
 
-//   $("tab_con .tab_list").hide();
-//   $(this).eq(i).show();
-// })
-
-$(".face li").click(function(){
-  $(".face li").removeClass("active")
-  $(this).addClass("active")
+  $(".tab_con .tab_list").hide();
+  $(".tab_con .tab_list").eq(i).show();
 })
 
+$(".face li").click(function(e){
+  e.preventDefault();
+  let num = $(this).index();
+  console.log(num);
 
+  $(".face li").removeClass("active");
+  $(this).addClass("active");
+})
+
+// swiper 2-1
 var swiper2_1_menu = new Swiper(".swiper2_1_menu",{
   freeMode: true,
   watchSlidesProgress: true,
@@ -67,6 +73,51 @@ var swiper2_1_slide = new Swiper(".swiper2_1_slide",{
 
   thumbs: {
     swiper: swiper2_1_menu,
+  },
+})
+
+// swiper 2-2
+var swiper2_2_menu = new Swiper(".swiper2_2_menu",{
+  freeMode: true,
+  watchSlidesProgress: true,
+})
+
+var swiper2_2_slide = new Swiper(".swiper2_2_slide",{
+  loop:true,
+  slidesPerView: "auto",
+
+  thumbs: {
+    swiper: swiper2_2_menu,
+  },
+})
+
+// swiper 2-3
+var swiper2_3_menu = new Swiper(".swiper2_3_menu",{
+  freeMode: true,
+  watchSlidesProgress: true,
+})
+
+var swiper2_3_slide = new Swiper(".swiper2_3_slide",{
+  loop:true,
+  slidesPerView: "auto",
+
+  thumbs: {
+    swiper: swiper2_3_menu,
+  },
+})
+
+// swiper 2-4
+var swiper2_4_menu = new Swiper(".swiper2_4_menu",{
+  freeMode: true,
+  watchSlidesProgress: true,
+})
+
+var swiper2_4_slide = new Swiper(".swiper2_4_slide",{
+  loop:true,
+  slidesPerView: "auto",
+
+  thumbs: {
+    swiper: swiper2_4_menu,
   },
 })
 

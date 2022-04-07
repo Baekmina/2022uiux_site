@@ -1,31 +1,18 @@
 @charset 'utf-8';
 
 @media screen and (max-width:568px){
-    .section.page1{height: 684px !important;}
-    .section.page1 .fp-tableCell{height: 684px !important;}
-    .section.page1 .front{height: 684px !important;}
-    #video{height: 684px;}
-    .section.page1 .nextBtn{
-        position: absolute;z-index: 1;
-        left: 50%;transform: translateX(-50%);
-        bottom: -100px;
-        animation:scroll 0.8s infinite alternate;
+    .section.page3 .character h2{font-size: 33px;}
+    .tab_wrap>ul>li>a{font-size: 17px !important;}
+    .characters .bodyImg{
+        position: relative;
+        width: 100%;
     }
-    @keyframes scroll{
-        to{bottom: -70px;}
-    }
-    
-    .section.page2{height: 511px !important;}
 
-    .section.page3 .character H2{font-size: 33px;}
-
-    #con01 .characters .backImg{left: 50%;transform: translateX(-50%);}
-    #con01 .characters .bodyImg{
-        left: 50%;transform: translateX(-37%);
-        width: 750px;
-    }
-    
-    #con01 .introduce{
+    .introduce{
         padding: 0 16px;
     }
+    .introduce p{font-size: 17px !important;}
+    .introduce h2{font-size: 22px !important;}
+
+    .section.page4 .story p{font-size: 14px;}
 }

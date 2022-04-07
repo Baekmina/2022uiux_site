@@ -24,17 +24,22 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .section.page1 .nextBtn{
     position: absolute;z-index: 1;
     left: 50%;transform: translateX(-50%);
-    bottom: -200px;
+    bottom: 0;
     animation:scroll 0.8s infinite alternate;
 }
 @keyframes scroll{
-    to{bottom: -160px;}
+    to{bottom: 20px;}
 }
 
 .section.page2{background: #302A24;}
 .section.page2 .intro{color: #c59771;}
 
-
+.section.page2 .frame{
+    position: absolute;
+    top: 0;
+    left: 50%;transform: translateX(-50%);
+    z-index: 9999;
+}
 
 .mySwiper{
     height: 50px;
@@ -97,7 +102,11 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .section.page3{background: #5B4D47;}
 .section.page3 .character{color:#DFBF96;}
-.section.page3 .character h2{font-size: 60px;}
+.section.page3 .characters{
+    background: url(../images/characterPortraitCard.png) no-repeat center;
+    background-size: contain;
+}
+
 
 
 /* slide */
@@ -105,22 +114,22 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .tab_wrap>ul>li>a{color:#FFF3D0;text-shadow: 3px 3px 3px gray}
 
 
-#con01 .face li{
+.face li{
     background: url(../images/cookiebackground.png) no-repeat center;
     background-size: contain;
     height: 100px;
     margin-bottom: 15px;
     opacity: 0.5;
 }
-#con01 .face li a{
+.face li a{
     display: block;height: 100%;
     display: flex;justify-content: center;align-items: center;
 }
-#con01 .characters{overflow: hidden;}
+.characters{overflow: hidden;}
 
-#con01 .face li.active{opacity: 1;}
+.face li.active{opacity: 1;}
 
-#con01 .characters .bodyImg{
+.characters .bodyImg{
     position: absolute;
     left: 0;
     animation: body 1s infinite alternate;
@@ -129,6 +138,15 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     from{top: 0;}
     to{top: 20px;}
 }
-#con01 .introduce{
-    padding: 0 90px;
+.introduce{
+    padding-left: 150px;
 }
+
+
+/* page4 */
+.section.page4{
+    background: url(../images/gameStoryBackground.webp) no-repeat center;
+    background-size: cover;
+}
+.section.page4 .world{color:#DFBF96}
+.section.page4 .story p{color:#C6A693;font-size: 19px;}
