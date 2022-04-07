@@ -18,4 +18,14 @@
     .section.page2{height: 511px !important;}
 
     .section.page3 .character H2{font-size: 33px;}
+
+    #con01 .characters .backImg{left: 50%;transform: translateX(-50%);}
+    #con01 .characters .bodyImg{
+        left: 50%;transform: translateX(-37%);
+        width: 750px;
+    }
+    
+    #con01 .introduce{
+        padding: 0 16px;
+    }
 }

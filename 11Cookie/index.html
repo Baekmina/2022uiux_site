@@ -94,6 +94,7 @@
                 </div>
             </div>
         </div>
+        <!-- page2 -->
         <div class="section page2 position-relative" data-anchor="p_two">
             <div class="row position-absolute deco" style="top:0;left:50%;transform: translateX(-40%);">
                 <div class="col text-center px-0">
@@ -105,20 +106,18 @@
                 <h2 class="text-center fw-bold fs-1">게임소개</h2>
             </div>
             <div class="container position-relative">
-                <div class="swiper">
-                    <!-- tabmenu -->
-                    <div id="tabmenu">
-                        <div class="tab">
-                            <ul class="d-flex text-center">
-                                <li class="fs-4 active">모험</li>
-                                <li class="fs-4">왕국</li>
-                                <li class="fs-4">납품</li>
-                                <li class="fs-4">PVP</li>
-                                <li class="fs-4">길드</li>
-                            </ul>
-                        </div>
+                <!-- slide tab -->
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide fs-4 text-center">모험</div>
+                        <div class="swiper-slide fs-4 text-center">왕국</div>
+                        <div class="swiper-slide fs-4 text-center">납품</div>
+                        <div class="swiper-slide fs-4 text-center">PVP</div>
+                        <div class="swiper-slide fs-4 text-center">길드</div>
                     </div>
-                    <!-- slide -->
+                </div>
+                <!-- slide -->
+                <div class="swiper mainSwiper">
                     <div class="swiper-wrapper mb-3 mb-md-5 mt-3 mt-md-5">
                         <div class="swiper-slide text-center">
                             <img src="images/gameContents-ko-01.jpg" alt="" class="img-fluid">
@@ -139,37 +138,325 @@
                     <!-- pagination -->
                     <div class="swiper-pagination"></div>
                     <!-- navigation buttons -->
-                    <div class="swiper-button-prev d-none d-lg-block"></div>
-                    <div class="swiper-button-next d-none d-lg-block"></div>
+                    <div class="swiper-button-prev d-none d-xl-block"></div>
+                    <div class="swiper-button-next d-none d-xl-block"></div>
                 </div>
             </div>
         </div>
+        <!-- page3 -->
         <div class="section page3" data-anchor="p_three">
             <div class="container">
-                <div class="row position-absolute deco" style="top:0;left:50%;transform: translateX(-40%);">
-                    <div class="col text-center px-0">
-                        <img src="images/centerdeco.png" alt="" style="width:70px;height: 40px;">
-                    </div>
-                </div>
-                <div class="character mb-4 mb-md-5">
+                <div class="character">
                     <h4 class="text-center fs-4">COOKIERUN KINGDOM</h4>
-                    <h2 class="text-center fw-bold mb-md-3">CHARACTERS</h2>
-                    <p class="text-center">※ 일부 캐릭터는 추후 업데이트 예정입니다.</p>
+                    <h2 class="text-center fs-1 fw-bold mb-md-3">CHARACTERS</h2>
                 </div>
-                <div class="tab row text-center">
-                    <div class="col-6 col-md-2 offset-md-2 mb-2 mb-md-0">
-                        <a href="#!" class="fs-4">영웅쿠키</a>
-                    </div>
-                    <div class="col-6 col-md-2 mb-2 mb-md-0">
-                        <a href="#!" class="fs-4">용감한 쿠키와 친구들</a>
-                    </div>
-                    <div class="col-6 col-md-2 mb-2 mb-md-0">
-                        <a href="#!" class="fs-4">전설쿠키</a>
-                    </div>
-                    <div class="col-6 col-md-2 mb-2 mb-md-0">
-                        <a href="#!" class="fs-4">악당쿠키</a>
+                <!-- top tab -->
+                <div class="tab_wrap">
+                    <ul class="tit_list d-flex mb-md-5">
+                        <li><a href="#con01" class="fs-4">영웅쿠키</a></li>
+                        <li><a href="#con02" class="fs-4">용감한 쿠키와 친구들</a></li>
+                        <li><a href="#con03" class="fs-4">전설쿠키</a></li>
+                        <li><a href="#con04" class="fs-4">악당쿠키</a></li>
+                    </ul>
+                    <!-- tab contents -->
+                    <div class="tab_con">
+                        <!-- con01 -->
+                        <div id="con01" class="tab_list">
+                            <div class="row">
+                                <div class="col-md-2 d-none d-lg-block bg-info">
+                                    <div class="swiper swiper2_1_menu" thumbsSlider="" >
+                                        <ul class="face swiper-wrapper d-flex flex-column">
+                                            <li class="swiper-slide active">
+                                                <a href="#!">
+                                                    <img src="images/pure-vanilla-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="#!">
+                                                    <img src="images/hollyberry-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="#!">
+                                                    <img src="images/golden-cheese-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="#!">
+                                                    <img src="images/dark-cacao-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="#!">
+                                                    <img src="images/white-lily-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 offset-md-1">
+                                    <div class="swiper swiper2_1_slide">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <!-- <img src="images/characterPortraitCard.png" alt="" class="backImg img-fluid"> -->
+                                                        <img src="images/pure-vanilla-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">퓨어바닐라 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 김예림</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            자연의 축복을 듬뿍 받은 우유크림과 향긋한 바닐라 열매가 들어간 아주 포근한 쿠키. 사르르 부드러워 어디에나 잘 어울리는
+                                                            바닐라처럼, 친절하고 상냥한 퓨어바닐라 쿠키와는 누구나 친구가 될 수 있다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/hollyberry-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">홀리베리 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 이새아</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            이 쿠키의 선명한 붉은 빛을 보라. 세상에서 가장 뜨거운 햇빛을 받고 자란 베리나무, 그중에서도 유독 짙은 빛깔의
+                                                            열매를 엄선해 넣었다! 그 빛깔부터 어찌나 열정적이고 뜨거운지, 만나는 쿠키마다 진한 우정을 나누지 않고서야
+                                                            못배기는 쿠키가 되었다고.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/golden-cheese-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">골드치즈 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 김연우</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            흘러넘칠 정도로 탐욕스런 황금치즈를 잔뜩 넣어 만든 금색의 쿠키.
+                                                            풍미 가득한 치즈 기둥, 윤기 좔좔 황금 금고, 눈부신 골드치즈 조각상까지...
+                                                            온통 황금을 덧발라 번쩍거리는 골드치즈 왕국에서도 가장 높고 반짝이는 곳을 독차지했다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/dark-cacao-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">다크카카오 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 정승욱</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            눈보라가 휘몰아치는 절벽 끝에서 자란 다크카카오 열매를 건조한 겨울 바람에 한 번 더
+                                                            말렸더니 쓰디쓴 카카오닙스가 되었다. 반죽이 얼어버릴 정도로 추운 곳에서 자라나서인지
+                                                            단맛이라고는 전혀 없이 차갑고 고독해진 쿠키.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/white-lily-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">세인트릴리 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 송하림</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            달빛만이 빛나던 어느 밤에, 비를 맞고 조용히 피어난 순백의 백합꽃을 닮은 쿠키.
+                                                            차분히 가라앉은 눈빛을 보고 있노라면 조용하고도 침착하게 세상의 진리를 탐구하고자 하는
+                                                            호기심이 비친다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- con02 -->
+                        <!-- <div id="con02" class="tab_list">
+                            <div class="row">
+                                <div class="col-md-2 d-none d-lg-block">
+                                    <div class="swiper swiper2_1_menu" thumbsSlider="">
+                                        <ul class="face swiper-wrapper d-flex flex-column">
+                                            <li class="swiper-slide active">
+                                                <a href="#!">
+                                                    <img src="images/brave-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="#!">
+                                                    <img src="images/hollyberry-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="#!">
+                                                    <img src="images/golden-cheese-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="#!">
+                                                    <img src="images/dark-cacao-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="#!">
+                                                    <img src="images/white-lily-cookie.png" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="swiper swiper2_1_slide">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/characterPortraitCard.png" alt="" class="backImg">
+                                                        <img src="images/pure-vanilla-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">퓨어바닐라 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 김예림</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            자연의 축복을 듬뿍 받은 우유크림과 향긋한 바닐라 열매가 들어간 아주 포근한 쿠키. 사르르 부드러워 어디에나 잘 어울리는
+                                                            바닐라처럼, 친절하고 상냥한 퓨어바닐라 쿠키와는 누구나 친구가 될 수 있다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/characterPortraitCard.png" alt="" class="backImg">
+                                                        <img src="images/hollyberry-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">홀리베리 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 이새아</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            이 쿠키의 선명한 붉은 빛을 보라. 세상에서 가장 뜨거운 햇빛을 받고 자란 베리나무, 그중에서도 유독 짙은 빛깔의
+                                                            열매를 엄선해 넣었다! 그 빛깔부터 어찌나 열정적이고 뜨거운지, 만나는 쿠키마다 진한 우정을 나누지 않고서야
+                                                            못배기는 쿠키가 되었다고.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/characterPortraitCard.png" alt="" class="backImg">
+                                                        <img src="images/golden-cheese-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">골드치즈 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 김연우</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            흘러넘칠 정도로 탐욕스런 황금치즈를 잔뜩 넣어 만든 금색의 쿠키.
+                                                            풍미 가득한 치즈 기둥, 윤기 좔좔 황금 금고, 눈부신 골드치즈 조각상까지...
+                                                            온통 황금을 덧발라 번쩍거리는 골드치즈 왕국에서도 가장 높고 반짝이는 곳을 독차지했다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/characterPortraitCard.png" alt="" class="backImg">
+                                                        <img src="images/dark-cacao-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">다크카카오 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 정승욱</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            눈보라가 휘몰아치는 절벽 끝에서 자란 다크카카오 열매를 건조한 겨울 바람에 한 번 더
+                                                            말렸더니 쓰디쓴 카카오닙스가 되었다. 반죽이 얼어버릴 정도로 추운 곳에서 자라나서인지
+                                                            단맛이라고는 전혀 없이 차갑고 고독해진 쿠키.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row">
+                                                    <div class="col-md-6 characters">
+                                                        <img src="images/characterPortraitCard.png" alt="" class="backImg">
+                                                        <img src="images/white-lily-cookie (1).png" alt="" class="bodyImg">
+                                                    </div>
+                                                    <div class="col-md-6 introduce">
+                                                        <p class="fs-4 mb-2" style="color:#fff3d0">영웅쿠키</p>
+                                                        <h2 class="fw-bold fs-1" style="color:#fff3d0">세인트릴리 쿠키</h2>
+                                                        <p class="fs-4" style="color:#fff3d0">성우 : 송하림</p>
+                                                        <p class="fs-5" style="color:#fff3d0">
+                                                            달빛만이 빛나던 어느 밤에, 비를 맞고 조용히 피어난 순백의 백합꽃을 닮은 쿠키.
+                                                            차분히 가라앉은 눈빛을 보고 있노라면 조용하고도 침착하게 세상의 진리를 탐구하고자 하는
+                                                            호기심이 비친다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div id="con3" class="tab_list"></div>
+                        <div id="con4" class="tab_list"></div>
                     </div>
                 </div>
+                <!-- <div thumbsSlider="" class="swiper faceSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide fs-4 text-center" style="background:url(images/cookiebackground.png) no-repeat center;background-size: contain;">
+                            <img src="images/pure-vanilla-cookie.png" alt="">
+                        </div>
+                        <div class="swiper-slide fs-4 text-center" style="background:url(images/cookiebackground.png) no-repeat center;background-size: contain;">
+                            <img src="images/hollyberry-cookie.png" alt="">
+                        </div>
+                        <div class="swiper-slide fs-4 text-center" style="background:url(images/cookiebackground.png) no-repeat center;background-size: contain;">
+                            <img src="images/golden-cheese-cookie.png" alt="">
+                        </div>
+                        <div class="swiper-slide fs-4 text-center" style="background:url(images/cookiebackground.png) no-repeat center;background-size: contain;">
+                            <img src="images/dark-cacao-cookie.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper chaSwiper">
+                    <div class="swiper-wrapper mb-3 mb-md-5 mt-3 mt-md-5">
+                        <div class="swiper-slide text-center"  style="background:url(images/characterPortraitCard.png) no-repeat center;background-size: contain;">
+                            <img src="images/pure-vanilla-cookie (1).png" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="images/gameContents-ko-02.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="images/gameContents-ko-03.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="images/gameContents-ko-04.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="images/gameContents-ko-05.jpg" alt="" class="img-fluid">
+                        </div> -->
+                
             </div>
         </div>
         <div class="section" data-anchor="p_four"></div>
