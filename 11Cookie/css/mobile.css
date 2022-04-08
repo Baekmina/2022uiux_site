@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
-@media screen and (max-width:568px){
+@media screen and (max-width:575px){
+    .mySwiper .swiper-slide{font-size: 17px !important;}
     .section.page3 .character h2{font-size: 33px;}
     .tab_wrap>ul>li>a{font-size: 17px !important;}
     .characters .bodyImg{
@@ -14,5 +15,17 @@
     .introduce p{font-size: 17px !important;}
     .introduce h2{font-size: 22px !important;}
 
-    .section.page4 .story p{font-size: 14px;}
+    .section.page4 .wrap{transform: translateY(-80px);}
+    .section.page4 .story p{font-size: 14px;color:#C6A693}
+    .section.page4 .cookie>img{width: 30%;}
+    .section.page4 .cookie .cImg1{bottom: 10%;right: 0;}
+    .section.page4 .cookie .cImg2{bottom: 0;right: 10%;}
+    .section.page4 .cookie .cImg3{
+        bottom: 0;left: 0%;
+        animation: cImg3 2s infinite alternate;
+    }
+    @keyframes cImg3{to{bottom: 1%;}}
+    .section.page4 .cookie .cImg4{bottom: 0;left: 18%;}
+    .section.page4 .cookie .cImg5{bottom: 0;left: 35%;opacity: 0.7;}
+
 }

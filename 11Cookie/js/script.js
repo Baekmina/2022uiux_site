@@ -1,9 +1,24 @@
+// wow
+new WOW().init();
+
 // fullpage
 $("#fullpage").fullpage({
   menu: ".topMenu",
   anchors: ["p_one", "p_two", "p_three", "p_four", "p_five"],
   responsiveWidth: 1000,
+
+  // page4
+  afterLoad: function(anchorslink, index){
+    if(index == 4){
+      $(".cImg").addClass("move")
+      $(".ani").addClass("top")
+    }else{
+      $(".cImg").removeClass("move")
+      $(".ani").removeClass("top")
+    }
+  }
 })
+
 
 // modal
 $(".youtube").colorbox({
@@ -63,6 +78,7 @@ $(".face li").click(function(e){
 
 // swiper 2-1
 var swiper2_1_menu = new Swiper(".swiper2_1_menu",{
+  slidesPerView: 5,
   freeMode: true,
   watchSlidesProgress: true,
 })
@@ -120,4 +136,5 @@ var swiper2_4_slide = new Swiper(".swiper2_4_slide",{
     swiper: swiper2_4_menu,
   },
 })
+
 
