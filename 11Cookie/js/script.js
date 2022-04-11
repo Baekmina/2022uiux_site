@@ -6,6 +6,7 @@ $("#fullpage").fullpage({
   menu: ".topMenu",
   anchors: ["p_one", "p_two", "p_three", "p_four", "p_five"],
   responsiveWidth: 1000,
+  navigation: true,
 
   // page4
   afterLoad: function(anchorslink, index){
@@ -26,6 +27,15 @@ $(".youtube").colorbox({
   innerWidth: 1000,
   innerHeight: 562.5,
 });
+
+
+// fp-nav
+$("#fp-nav li a").click(function(){
+  $("#fp-nav li a").removeClass("active");
+  $(this).addClass("active");
+})
+
+
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
@@ -94,6 +104,7 @@ var swiper2_1_slide = new Swiper(".swiper2_1_slide",{
 
 // swiper 2-2
 var swiper2_2_menu = new Swiper(".swiper2_2_menu",{
+  slidesPerView: 5,
   freeMode: true,
   watchSlidesProgress: true,
 })
@@ -109,6 +120,7 @@ var swiper2_2_slide = new Swiper(".swiper2_2_slide",{
 
 // swiper 2-3
 var swiper2_3_menu = new Swiper(".swiper2_3_menu",{
+  slidesPerView: 5,
   freeMode: true,
   watchSlidesProgress: true,
 })
@@ -124,6 +136,7 @@ var swiper2_3_slide = new Swiper(".swiper2_3_slide",{
 
 // swiper 2-4
 var swiper2_4_menu = new Swiper(".swiper2_4_menu",{
+  slidesPerView: 5,
   freeMode: true,
   watchSlidesProgress: true,
 })

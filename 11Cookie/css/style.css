@@ -11,12 +11,21 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .navbar .nav-item{width: 20%;}
 .navbar .nav-item a{font-size: 18px;}
 
-
 #video{
     position: absolute;
     left: 0;top: 0;width: 100%;height: 100%;
     object-fit: cover;
 }
+
+/* fp-nav */
+#fp-nav ul li{width: 30px;height: 30px;margin: 7.5px;}
+#fp-nav ul li a span{
+    background: url(../images/dot1.svg) no-repeat center;background-size: cover;
+    width: 20px;height: 20px;margin: -10px 0 0 -10px;
+}
+#fp-nav ul li a.active span{height: 30px;width: 30px;margin: -15px 0 0 -15px;}
+#fp-nav li:nth-child(6){display: none;}
+
 
 /* page1 */
 
@@ -37,6 +46,9 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .section.page2{background: #302A24;}
 .section.page2 .intro{color: #c59771;}
+.bFrame img {width: 168px;position: absolute;}
+.bFrame .leftTop{top: -117px;left: 0;}
+.bFrame .rightTop{top: -117px;right: 0;transform: rotateY(180deg);}
 
 .section.page2 .frame{
     position: absolute;
@@ -154,6 +166,9 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     background: url(../images/gameStoryBackground.webp) no-repeat center;
     background-size: cover;
 }
+.section.page4 .bFrame .leftTop{top: -140px;left: 0;}
+.section.page4 .bFrame .rightTop{top: -140px;right: 0;transform: rotateY(180deg);}
+
 .section.page4 .world{color:#DFBF96}
 .section.page4 .story .ani{
     color:#C6A693;font-size: 19px;
@@ -254,16 +269,38 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* page5 */
 .section.page5{background: #463E3A;}
 .section.page5 .media{color:#DFBF96;}
+.section.page5 .bFrame .leftTop{top: -150px;left: 0;}
+.section.page5 .bFrame .rightTop{top: -150px;right: 0;transform: rotateY(180deg);}
+
 .section.page5 .btn_play{
     position: absolute;left: 50%;top: 50%;
     transform: translate(-50%,-50%);
 }
 
+.section.page5 .media_img .you_img{height: 200px;}
 .section.page5 .media_txt{color: #FFF3CD;}
 .section.page5 .media_txt .t_right{transform: rotate(180deg);}
 
 
 
+
+
+/* page6_footer */
+.footer{background: rgb(25, 28, 36);}
+.footer .ftSNS{height: 80px;}
+.footer .ftSNS li{width: 6%}
+.footer .sns{width: 100%;height: 100%;}
+.footer .sns.face{background: url(../images/sns_face.svg) no-repeat center;}
+.footer .sns.face:hover{background: url(../images/sns_face1.svg) no-repeat center;}
+.footer .sns.tw{background: url(../images/sns_tw.svg) no-repeat center;}
+.footer .sns.tw:hover{background: url(../images/sns_tw1.svg) no-repeat center;}
+.footer .sns.you{background: url(../images/sns_you.svg) no-repeat center;}
+.footer .sns.you:hover{background: url(../images/sns_you1.svg) no-repeat center;}
+.footer .sns.blog{background: url(../images/sns_blog.svg) no-repeat center;}
+.footer .sns.blog:hover{background: url(../images/sns_blog1.svg) no-repeat center;}
+
+.footer .ftList{border: 1px solid #fff; margin-right: 10px;}
+.footer .ftList:hover{background: #fff; color:black !important;font-weight: bold;}
 
 /* common */
 .container-900{width: 900px;margin: 0 auto;}

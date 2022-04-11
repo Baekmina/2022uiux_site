@@ -1,6 +1,9 @@
 @charset 'utf-8';
 
 @media screen and (max-width:575px){
+    .bFrame img {width: 100px;}
+    .bFrame .leftTop{top: -90px;}
+    .bFrame .rightTop{top: -90px;}
     .mySwiper .swiper-slide{font-size: 17px !important;}
     .section.page3 .character h2{font-size: 33px;}
     .tab_wrap>ul>li>a{font-size: 17px !important;}
@@ -28,4 +31,8 @@
     .section.page4 .cookie .cImg4{bottom: 0;left: 18%;}
     .section.page4 .cookie .cImg5{bottom: 0;left: 35%;opacity: 0.7;}
 
+    .section.page5 .bFrame .leftTop{top: -100px;}
+    .section.page5 .bFrame .rightTop{top: -100px;}
+
+    .footer .ftSNS li{width: 20%}
 }
