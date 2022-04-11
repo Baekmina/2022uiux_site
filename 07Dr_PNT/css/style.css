@@ -1,6 +1,14 @@
 @charset 'utf-8';
 
-body{font-family: 'Assistant', sans-serif;}
+body{
+    font-family: 'Assistant', 'NEXON Lv2 Gothic', sans-serif;
+}
+@font-face{
+    font-family: 'NEXON Lv2 Gothic';
+    src:url(../font/NEXON\ Lv2\ Gothic.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root{
     --box-shadow1: 10px 10px 20px rgba(0,0,0,0.3);
@@ -45,6 +53,7 @@ ul{margin: 0;padding: 0;}
     float: right;
     margin-top: 20px;
 }
+.insta .row>div{cursor: pointer;}
 .content .img-card img{max-width: 300px !important;right: 10rem;top: -3rem;}
 
 .contact{
