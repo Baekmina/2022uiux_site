@@ -27,6 +27,26 @@ $(".lang div").click(function(){
                     <li><a href="#">제품정보</a></li>
         `)
     }
+
+    if(i == 1){
+        $(".mo_menu ul").html(`
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">BUSINESS</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">SCIENCE</a></li>
+                    <li><a href="#">PR</a></li>
+                    <li><a href="#">INFORMATION</a></li>
+        `)
+    }else{
+        $(".mo_menu ul").html(`
+                    <li><a href="#">기업정보</a></li>
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">핵심경쟁력</a></li>
+                    <li><a href="#">투자정보</a></li>
+                    <li><a href="#">홍보센터</a></li>
+                    <li><a href="#">제품정보</a></li>
+        `)
+    }
 });
 
 $(window).scroll(function(){
@@ -49,21 +69,43 @@ $(".gnb>ul>li").hover(function(){
 })
 
 
+// submenu mobile
+$(".gnb>ul").clone().appendTo(".mo_menu")
+const menuElem = $(".mo_menu>ul>li>a");
+
+menuElem.click(function(e){
+    e.preventDefault();
+    console.log("zzz")
+
+    menuElem.parent().find(".submenu").slideUp();
+    if($(this).hasClass("active")){
+        $(this).parent().find(".submenu").slideUp();
+        $(this).removeClass("active")
+    }else{
+        $(this).parent().find(".submenu").slideDown();
+        menuElem.removeClass("active");
+        $(this).addClass("active")
+    }
+})
+
+
+
 
 // toggle
 
 let chk = true;
 
+
 $(".toggle").click(function(){
     if(chk == true){
         $(this).addClass("active");
-        $(".gnb").css("left",0);
+        $(".mo_menu").css("left",0);
         $(".lang").css("display","flex");
         $(".overLayer").show();
         chk = false;
     }else{
         $(this).removeClass("active");
-        $(".gnb").css("left","-150%");
+        $(".mo_menu").css("left","-150%");
         $(".lang").hide();
         $(".overLayer").hide();
         chk = true;
@@ -72,7 +114,7 @@ $(".toggle").click(function(){
 
 $(window).resize(function(){
     $(".toggle").removeClass("active");
-    $(".gnb").removeAttr("style");
+    $(".mo_menu").removeAttr("style");
     // $(".submenu").hide();
     $(".lang").removeAttr("style");
     $(".overLayer").hide();

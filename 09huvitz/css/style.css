@@ -32,7 +32,7 @@ body{font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
 }
 .headerWrap .gnb>ul>li:hover:after{opacity: 1;}
 
-.headerWrap .gnb>ul>li>a>span>img{display: none;}
+
 
 /* lang */
 .lang{display: flex;width: 150px;}
@@ -61,10 +61,12 @@ body{font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
     display: block;text-align: center;line-height: 35px;
     font-size: 16px;
 }
-
+.headerWrap .gnb>ul>li>a i{display: none;}
 .headerWrap .personM{display: none;}
 
 .headerWrap .toggle{display: none;}
+.headerWrap .overLayer{display: none;}
+.headerWrap .mo_menu{display: none;}
 
 
 

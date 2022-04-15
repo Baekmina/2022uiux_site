@@ -7,29 +7,6 @@
 
     header{top: 0;z-index:99999;height: 56px;}
     .headerWrap{width: 100%;height: 56px;padding: 0 20px;}
-    .headerWrap .gnb{
-        position: fixed;margin: initial;
-        width: 70%;height: 100%;
-        display: flex;justify-content: center;align-items: center;
-        transition: 0.3s;
-        top: 0;left: -100%;
-        background: white;
-        z-index: 11;
-    }
-    .headerWrap .gnb>ul{display: block;width: 80%;}
-    .headerWrap .gnb>ul>li{margin-bottom: 20px;width: 100%;}
-    .headerWrap .gnb>ul>li:after{display: none;}
-    .headerWrap .gnb>ul>li>a{
-        display: block;font-size: 20px;font-weight: 500;
-        text-align: right;color:#333333;
-    }
-
-    .headerWrap .gnb>ul>li>a>span>img{
-        display: inline;margin-left: 10px;
-        width: 11px;height: 6px;
-        transform: translateY(-50%);
-    }
-
     .headerWrap .personM{
         display: flex;justify-content: center;align-items: center;
         margin-left: auto;
@@ -62,10 +39,36 @@
     .headerWrap .toggle.active .bar3{transform: translateY(0) rotate(-45deg);}
 
 
-    .headerWrap .lang{position: fixed;z-index: 99999;left:165px;display: none;}
+    .headerWrap .lang{position: fixed;z-index: 99999;left:160px;display: none;}
     .headerWrap .lang div{border: 1px solid #7AB5C6;color:#7AB5C6;}
-    .headerWrap .submenu{display: none;}
-    
+
+
+
+    /* submenu */
+    .headerWrap .gnb{display: none;}
+    .headerWrap .mo_menu{
+        display: block;
+        position: fixed;margin: initial;
+        width: 70%;height: 100%;
+        display: flex;justify-content: center;align-items: center;
+        transition: 0.3s;
+        top: 0;left: -150%;
+        background: white;
+        z-index: 11;
+    }
+    .headerWrap .mo_menu>ul{display: block;width: 80%;}
+    .headerWrap .mo_menu>ul>li{margin-bottom: 20px;width: 100%;}
+    .headerWrap .mo_menu>ul>li:after{display: none;}
+    .headerWrap .mo_menu>ul>li>a{
+        display: block;font-size: 20px;font-weight: 500;
+        text-align: right;color:#333333;
+    }
+
+    .headerWrap .mo_menu>ul>li>a i{display: inline-block;transition: 0.3s;}
+    .headerWrap .mo_menu>ul>li>a.active i{transform: rotate(180deg);}
+    .headerWrap .mo_menu .submenu{position: initial;transition: initial;}
+    .headerWrap .mo_menu .submenu a{text-align: right;}
+
 
     /* visual */
     .visual{height: 70vh;}
