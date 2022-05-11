@@ -6,7 +6,6 @@
 5. nail http://baekmina.github.io/2022uiux_site/05from_the_nail
 6. jejuair http://baekmina.github.io/2022uiux_site/06jejuair
 7. dr.pnt http://baekmina.github.io/2022uiux_site/07Dr_PNT
-8. parallax http://baekmina.github.io/2022uiux_site/08parallax
-9. huvitz http://baekmina.github.io/2022uiux_site/09huvitz
-10. bootstrap http://baekmina.github.io/2022uiux_site/10sandoll
-11. fullpage http://baekmina.github.io/2022uiux_site/11Cookie
+8. huvitz http://baekmina.github.io/2022uiux_site/08huvitz
+9. bootstrap http://baekmina.github.io/2022uiux_site/09sandoll
+10. fullpage http://baekmina.github.io/2022uiux_site/10Cookie
